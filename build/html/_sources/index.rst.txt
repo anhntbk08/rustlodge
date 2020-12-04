@@ -3,8 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Installing Rust in Ubuntu
+Environment Setup
 ==========================================
+
+Setting Rustc
++++++++++++++
 
 - Open terminal and enter the following command
 
@@ -43,7 +46,8 @@ Run the following command to check if Rust is installed successfully :
    rustc --version
 
 
-**Running Rust Sample Project in IntelliJ IDEA**
+Installing Plugins in IntelliJ IDEA
++++++++++++++++++++++++++++++++++++
 
 Open IDE and go to ``Plugins``.
 
@@ -69,6 +73,9 @@ Install and click ``OK``.
 
 
 .. image:: ./images/new3.png
+
+Running the project
++++++++++++++++++++
 
 Restart the IDE and click ``New Project``.
 
