@@ -46,7 +46,7 @@ Run the following command to check if Rust is installed successfully :
    rustc --version
 
 
-Installing Plugins in IntelliJ IDEA
+Installing Plugins 
 +++++++++++++++++++++++++++++++++++
 
 Open IDE and go to ``Plugins``.
