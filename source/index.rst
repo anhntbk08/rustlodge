@@ -85,15 +85,19 @@ Name your project.
 
 The project will be shown as this. Build the project.
 
-.. image:: ./images/RustInstallDoc11.png
+.. image:: ./images/new6.png
+
+
+.. image:: ./images/new7.png
+
 
 Run the Project.
 
-.. image:: ./images/RustInstallDoc12.png
+.. image:: ./images/new8.png
 
 The output will be displayed as shown below.
 
-.. image:: ./images/RustInstallDoc13.png
+.. image:: ./images/new9.png
 
 
 
