@@ -45,33 +45,39 @@ Run the following command to check if Rust is installed successfully :
 
 **Running Rust Sample Project in IntelliJ IDEA**
 
-Open IDE.
+Open IDE and go to ``Plugins``.
 
-.. image:: ./images/RustInstallDoc1.png
-
-Go to ``Plugins``.
-
-.. image:: ./images/RustInstallDoc2.png
+.. image:: ./images/image.png
 
 Search for ``Toml``, ``Rust`` and ``Rainbow Brackets`` and install them.
 
-.. image:: ./images/RustInstallDoc3.png
 
-.. image:: ./images/RustInstallDoc4.png
 
-.. image:: ./images/RustInstallDoc5.png
+.. image:: ./images/new1.png
 
-.. image:: ./images/RustInstallDoc6.png
 
-.. image:: ./images/RustInstallDoc7.png
+
+
+
+
+.. image:: ./images/new2.png
+
+Install and click ``OK``.
+
+
+
+
+
+.. image:: ./images/new3.png
 
 Restart the IDE and click ``New Project``.
 
-.. image:: ./images/RustInstallDoc8.png
+
+.. image:: ./images/new5.png
 
 Select ``Rust``.
 
-.. image:: ./images/RustInstallDoc9.png
+.. image:: ./images/new4.png
 
 Name your project.
 
