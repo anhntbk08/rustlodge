@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Environment Setup &#8212; rustLodge 1.0 documentation</title>
+    <title>History of Rust &#8212; rustLodge 1.0 documentation</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -44,8 +44,8 @@
     <script src="../_static/custom.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Code Flow in Rust" href="../codeFlow/index.html" />
-    <link rel="prev" title="RustLodge" href="../index.html" />
+    <link rel="next" title="Memory Safety" href="../memorySafety/index.html" />
+    <link rel="prev" title="Code Flow in Rust" href="../codeFlow/index.html" />
 
 <!-- Datatable -->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
@@ -89,16 +89,24 @@
       <ul id="navbar-main-elements" class="navbar-nav mr-auto">
         
         
-        <li class="nav-item active">
-            <a class="nav-link" href="">Environment Setup</a>
+        <li class="nav-item ">
+            <a class="nav-link" href="../environmentSetup/index.html">Environment Setup</a>
         </li>
         
         <li class="nav-item ">
             <a class="nav-link" href="../codeFlow/index.html">Code Flow in Rust Code</a>
         </li>
         
+        <li class="nav-item active">
+            <a class="nav-link" href="">History of Rust</a>
+        </li>
+        
         <li class="nav-item ">
-            <a class="nav-link" href="../history/index.html">History of Rust</a>
+            <a class="nav-link" href="../memorySafety/index.html">Memory Safety</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../servoEngine/index.html">Servo Engine</a>
         </li>
         
         <li class="nav-item ">
@@ -135,6 +143,10 @@
     <ul class="nav bd-sidenav">
         
         
+        
+        
+        
+        
           
         
         
@@ -161,15 +173,23 @@
     <ul class="nav section-nav flex-column">
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#setting-rustc" class="nav-link">Setting Rustc</a>
+            <a href="#features" class="nav-link">Features</a>
         </li>
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#installing-plugins" class="nav-link">Installing Plugins</a>
+            <a href="#important-people" class="nav-link">Important people</a>
         </li>
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#running-the-project" class="nav-link">Running the project</a>
+            <a href="#companies-products-using-rust" class="nav-link">Companies & Products using Rust</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#future-of-rust" class="nav-link">Future of Rust</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#reference" class="nav-link">Reference</a>
         </li>
     
     </ul>
@@ -185,63 +205,57 @@
               
               <div>
                 
-  <div class="section" id="environment-setup">
-<h1>Environment Setup<a class="headerlink" href="#environment-setup" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="setting-rustc">
-<h2>Setting Rustc<a class="headerlink" href="#setting-rustc" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Open terminal and enter the following command</p></li>
+  <div class="section" id="history-of-rust">
+<h1>History of Rust<a class="headerlink" href="#history-of-rust" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/rustLogo.png"><img alt="../_images/rustLogo.png" class="align-center" src="../_images/rustLogo.png" style="width: 250px;" /></a>
+<img alt="../_images/t.png" src="../_images/t.png" />
+<p>Rust began as a side project of <a class="reference external" href="https://github.com/graydon/rust">Graydon Hoare</a> , an employee at <a class="reference external" href="https://research.mozilla.org/rust/">Mozilla</a> . In short order, Mozilla saw the potential of the new language and began sponsoring it, before revealing it to the world in 2010.
+With contributions from <a class="reference external" href="https://engineering.linkedin.com/blog/2017/11/getting-to-know-dave-herman">Dave Herman</a>, Brendan Eich, and others. The designers refined the language while writing the <a class="reference external" href="https://servo.org/">Servo</a> layout or browser engine, and the Rust compiler.
+It has gained increasing use in industry, and Microsoft has been experimenting with the language for secure and safety-critical software components.</p>
+<p>What makes Rust stand out from all other languages is its marriage of low-level control with uncompromising safety</p>
+<p>Rust is a multi-paradigm programming language designed for performance and safety, especially safe concurrency. In terms of syntax, Rust is similar to C and C++, incorporating many of the keywords and commands from both languages. It is not a direct clone, however, and has some elements not found in either C or C++.,
+but can guarantee memory safety by using a borrow checker to validate references. Rust achieves <a class="reference external" href="https://hacks.mozilla.org/2019/01/fearless-security-memory-safety/">memory safety</a> without garbage collection, and reference counting is optional.</p>
+<p><code class="docutils literal notranslate"><span class="pre">rustc</span></code> is the compiler for the Rust programming language, provided by the project itself. Compilers take your source code and produce binary code, either as a library or executable.</p>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="important-people">
+<h2>Important people<a class="headerlink" href="#important-people" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>Designed by: <a class="reference external" href="https://github.com/graydon/rust">Graydon Hoare</a></p></li>
+<li><p><a class="reference external" href="https://www.rust-lang.org/governance/teams/compiler">Compiler team</a></p></li>
+<li><p><a class="reference external" href="https://prev.rust-lang.org/en-US/team.html">The Rust Team</a></p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl https://sh.rustup.rs -sSf <span class="p">|</span> sh
-</pre></div>
+</div></blockquote>
 </div>
-<ul class="simple">
-<li><p>Choose ‘Proceed with installation (default)’ by entering 1</p></li>
+<div class="section" id="companies-products-using-rust">
+<h2>Companies &amp; Products using Rust<a class="headerlink" href="#companies-products-using-rust" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://dropbox.tech/infrastructure/rewriting-the-heart-of-our-sync-engine">Dropbox</a></p></li>
+<li><p>Coursera</p></li>
+<li><p><a class="reference external" href="https://www.figma.com/blog/rust-in-production-at-figma/">Figma</a></p></li>
+<li><p><a class="reference external" href="https://www.rust-lang.org/static/pdfs/Rust-npm-Whitepaper.pdf">npm</a></p></li>
+<li><p>Microsoft</p></li>
+<li><p><a class="reference external" href="https://blog.cloudflare.com/building-even-faster-interpreters-in-rust/">Cloudflare</a></p></li>
+<li><p><a class="reference external" href="https://github.com/facebookexperimental/rust-shed">Facebook</a></p></li>
+<li><p><a class="reference external" href="https://aws.amazon.com/blogs/opensource/aws-sponsorship-of-the-rust-project/">Amazon</a></p></li>
+<li><p><a class="reference external" href="https://forge.rust-lang.org/platforms/discord.html">Discord</a></p></li>
 </ul>
-<p>You should get a message after installation saying:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Rust is installed now. Great!
-</pre></div>
+</div></blockquote>
 </div>
-<ul class="simple">
-<li><p>Add the following line to your ~/.bash_profile :</p></li>
+<div class="section" id="future-of-rust">
+<h2>Future of Rust<a class="headerlink" href="#future-of-rust" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="reference">
+<h2>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=79PSagCD_AY">The History of Rust</a></p></li>
+<li><p><a class="reference external" href="https://www.nature.com/articles/d41586-020-03382-2">Why scientists are turning to Rust</a></p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>”<span class="nv">$HOME</span>/.cargo/bin:<span class="nv">$PATH</span>”
-</pre></div>
-</div>
-<p>Run the following command :</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo cp ~/.cargo/bin/rustc /usr/local/bin/
-</pre></div>
-</div>
-<p>Run the following command to check if Rust is installed successfully :</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rustc --version
-</pre></div>
-</div>
-</div>
-<div class="section" id="installing-plugins">
-<h2>Installing Plugins<a class="headerlink" href="#installing-plugins" title="Permalink to this headline">¶</a></h2>
-<p>Open IDE and go to <code class="docutils literal notranslate"><span class="pre">Plugins</span></code>.</p>
-<img alt="../_images/image.png" src="../_images/image.png" />
-<p>Search for <code class="docutils literal notranslate"><span class="pre">Toml</span></code>, <code class="docutils literal notranslate"><span class="pre">Rust</span></code> and <code class="docutils literal notranslate"><span class="pre">Rainbow</span> <span class="pre">Brackets</span></code> and install them.</p>
-<img alt="../_images/new1.png" src="../_images/new1.png" />
-<img alt="../_images/new2.png" src="../_images/new2.png" />
-<p>Install and click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p>
-<img alt="../_images/new3.png" src="../_images/new3.png" />
-</div>
-<div class="section" id="running-the-project">
-<h2>Running the project<a class="headerlink" href="#running-the-project" title="Permalink to this headline">¶</a></h2>
-<p>Restart the IDE and click <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Project</span></code>.</p>
-<img alt="../_images/new5.png" src="../_images/new5.png" />
-<p>Select <code class="docutils literal notranslate"><span class="pre">Rust</span></code>.</p>
-<img alt="../_images/new4.png" src="../_images/new4.png" />
-<p>Name your project.</p>
-<img alt="../_images/RustInstallDoc10.png" src="../_images/RustInstallDoc10.png" />
-<p>The project will be shown as this. Build the project.</p>
-<img alt="../_images/new6.png" src="../_images/new6.png" />
-<img alt="../_images/new7.png" src="../_images/new7.png" />
-<p>Run the Project.</p>
-<img alt="../_images/new8.png" src="../_images/new8.png" />
-<p>The output will be displayed as shown below.</p>
-<img alt="../_images/new9.png" src="../_images/new9.png" />
+</div></blockquote>
 </div>
 </div>
 
@@ -251,8 +265,8 @@
               
               <div class='prev-next-bottom'>
                 
-    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">RustLodge</a>
-    <a class='right-next' id="next-link" href="../codeFlow/index.html" title="next page">Code Flow in Rust</a>
+    <a class='left-prev' id="prev-link" href="../codeFlow/index.html" title="previous page">Code Flow in Rust</a>
+    <a class='right-next' id="next-link" href="../memorySafety/index.html" title="next page">Memory Safety</a>
 
               </div>
               

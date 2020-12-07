@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Environment Setup &#8212; rustLodge 1.0 documentation</title>
+    <title>Git from Source &#8212; rustLodge 1.0 documentation</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -44,8 +44,7 @@
     <script src="../_static/custom.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Code Flow in Rust" href="../codeFlow/index.html" />
-    <link rel="prev" title="RustLodge" href="../index.html" />
+    <link rel="prev" title="History of Rust" href="../history/index.html" />
 
 <!-- Datatable -->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
@@ -89,8 +88,8 @@
       <ul id="navbar-main-elements" class="navbar-nav mr-auto">
         
         
-        <li class="nav-item active">
-            <a class="nav-link" href="">Environment Setup</a>
+        <li class="nav-item ">
+            <a class="nav-link" href="../environmentSetup/index.html">Environment Setup</a>
         </li>
         
         <li class="nav-item ">
@@ -101,8 +100,8 @@
             <a class="nav-link" href="../history/index.html">History of Rust</a>
         </li>
         
-        <li class="nav-item ">
-            <a class="nav-link" href="../gitFromSource/index.html">Git From Source</a>
+        <li class="nav-item active">
+            <a class="nav-link" href="">Git From Source</a>
         </li>
         
         
@@ -135,13 +134,13 @@
     <ul class="nav bd-sidenav">
         
         
+        
+        
+        
+        
+        
+        
           
-        
-        
-        
-        
-        
-        
         
         
       </ul>
@@ -161,15 +160,43 @@
     <ul class="nav section-nav flex-column">
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#setting-rustc" class="nav-link">Setting Rustc</a>
+            <a href="#install-git-essential" class="nav-link">1. Install Git essential</a>
         </li>
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#installing-plugins" class="nav-link">Installing Plugins</a>
+            <a href="#in-browser-got-to-git-via-git" class="nav-link">2. In browser got to Git via Git</a>
         </li>
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#running-the-project" class="nav-link">Running the project</a>
+            <a href="#go-into-git-dir" class="nav-link">3. Go into git dir.</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#run-make-config" class="nav-link">4. Run make config</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#update-and-install-dependencies" class="nav-link">5. Update and Install Dependencies</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#go-into-git-dir-run-make-all" class="nav-link">6. Go into git dir & run make all</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#run-make-install" class="nav-link">7. Run make install</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#check-out-all-the-executable-files-are-existing-in-the-bin-dir" class="nav-link">8. Check out all the executable files are existing in the bin dir</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#check-git-version-in-the-git-dir" class="nav-link">9. Check git version in the git dir</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#check-git-version-on-the-base" class="nav-link">10. Check git version on the base</a>
         </li>
     
     </ul>
@@ -185,63 +212,92 @@
               
               <div>
                 
-  <div class="section" id="environment-setup">
-<h1>Environment Setup<a class="headerlink" href="#environment-setup" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="setting-rustc">
-<h2>Setting Rustc<a class="headerlink" href="#setting-rustc" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Open terminal and enter the following command</p></li>
+  <div class="section" id="git-from-source">
+<h1>Git from Source<a class="headerlink" href="#git-from-source" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="install-git-essential">
+<h2>1. Install Git essential<a class="headerlink" href="#install-git-essential" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span>sudo apt install git build-essential
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="in-browser-got-to-git-via-git">
+<h2>2. In browser got to <a class="reference external" href="https://git-scm.com/downloads">Git via Git</a><a class="headerlink" href="#in-browser-got-to-git-via-git" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>you can get the latest development version via Git itself</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl https://sh.rustup.rs -sSf <span class="p">|</span> sh
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/git/git
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Choose ‘Proceed with installation (default)’ by entering 1</p></li>
-</ul>
-<p>You should get a message after installation saying:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Rust is installed now. Great!
+</div></blockquote>
+</div>
+<div class="section" id="go-into-git-dir">
+<h2>3. Go into git dir.<a class="headerlink" href="#go-into-git-dir" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span>cd git
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Add the following line to your ~/.bash_profile :</p></li>
-</ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>”<span class="nv">$HOME</span>/.cargo/bin:<span class="nv">$PATH</span>”
+</div></blockquote>
+</div>
+<div class="section" id="run-make-config">
+<h2>4. Run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">config</span></code><a class="headerlink" href="#run-make-config" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span>make configure
 </pre></div>
 </div>
-<p>Run the following command :</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo cp ~/.cargo/bin/rustc /usr/local/bin/
+</div></blockquote>
+</div>
+<div class="section" id="update-and-install-dependencies">
+<h2>5. Update and Install Dependencies<a class="headerlink" href="#update-and-install-dependencies" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span>sudo apt install libz-dev libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext cmake gcc
 </pre></div>
 </div>
-<p>Run the following command to check if Rust is installed successfully :</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rustc --version
+</div></blockquote>
+</div>
+<div class="section" id="go-into-git-dir-run-make-all">
+<h2>6. Go into git dir &amp; run make all<a class="headerlink" href="#go-into-git-dir-run-make-all" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span>cd git
+
+make all
 </pre></div>
 </div>
+</div></blockquote>
 </div>
-<div class="section" id="installing-plugins">
-<h2>Installing Plugins<a class="headerlink" href="#installing-plugins" title="Permalink to this headline">¶</a></h2>
-<p>Open IDE and go to <code class="docutils literal notranslate"><span class="pre">Plugins</span></code>.</p>
-<img alt="../_images/image.png" src="../_images/image.png" />
-<p>Search for <code class="docutils literal notranslate"><span class="pre">Toml</span></code>, <code class="docutils literal notranslate"><span class="pre">Rust</span></code> and <code class="docutils literal notranslate"><span class="pre">Rainbow</span> <span class="pre">Brackets</span></code> and install them.</p>
-<img alt="../_images/new1.png" src="../_images/new1.png" />
-<img alt="../_images/new2.png" src="../_images/new2.png" />
-<p>Install and click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p>
-<img alt="../_images/new3.png" src="../_images/new3.png" />
+<div class="section" id="run-make-install">
+<h2>7. Run make install<a class="headerlink" href="#run-make-install" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span>make install
+</pre></div>
 </div>
-<div class="section" id="running-the-project">
-<h2>Running the project<a class="headerlink" href="#running-the-project" title="Permalink to this headline">¶</a></h2>
-<p>Restart the IDE and click <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Project</span></code>.</p>
-<img alt="../_images/new5.png" src="../_images/new5.png" />
-<p>Select <code class="docutils literal notranslate"><span class="pre">Rust</span></code>.</p>
-<img alt="../_images/new4.png" src="../_images/new4.png" />
-<p>Name your project.</p>
-<img alt="../_images/RustInstallDoc10.png" src="../_images/RustInstallDoc10.png" />
-<p>The project will be shown as this. Build the project.</p>
-<img alt="../_images/new6.png" src="../_images/new6.png" />
-<img alt="../_images/new7.png" src="../_images/new7.png" />
-<p>Run the Project.</p>
-<img alt="../_images/new8.png" src="../_images/new8.png" />
-<p>The output will be displayed as shown below.</p>
-<img alt="../_images/new9.png" src="../_images/new9.png" />
+</div></blockquote>
+</div>
+<div class="section" id="check-out-all-the-executable-files-are-existing-in-the-bin-dir">
+<h2>8. Check out all the executable files are existing in the bin dir<a class="headerlink" href="#check-out-all-the-executable-files-are-existing-in-the-bin-dir" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span>ls /home/{USERNAME}/bin
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="check-git-version-in-the-git-dir">
+<h2>9. Check git version in the git dir<a class="headerlink" href="#check-git-version-in-the-git-dir" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span>/home/{USERNAME}/bin/git --version
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="check-git-version-on-the-base">
+<h2>10. Check git version on the base<a class="headerlink" href="#check-git-version-on-the-base" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span>git --version
+</pre></div>
+</div>
+</div></blockquote>
 </div>
 </div>
 
@@ -251,8 +307,7 @@
               
               <div class='prev-next-bottom'>
                 
-    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">RustLodge</a>
-    <a class='right-next' id="next-link" href="../codeFlow/index.html" title="next page">Code Flow in Rust</a>
+    <a class='left-prev' id="prev-link" href="../history/index.html" title="previous page">History of Rust</a>
 
               </div>
               
