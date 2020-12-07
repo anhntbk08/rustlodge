@@ -195,11 +195,25 @@
     <ul class="nav section-nav flex-column">
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#steps-invloved-in-gcc-compilation" class="nav-link">Steps invloved in GCC compilation</a>
+            <a href="#steps-how-gcc-carries-out-compilation" class="nav-link">Steps how GCC carries out compilation</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#preprocessing" class="nav-link">1. Preprocessing</a>
         </li>
     
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#preprocessing" class="nav-link">1. Preprocessing</a>
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#compilation" class="nav-link">2. Compilation</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#converting-it-in-assembly-language" class="nav-link">3. Converting it in assembly language</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#linking" class="nav-link">4. Linking</a>
+        </li>
+    
+            </ul>
         </li>
     
     </ul>
@@ -218,11 +232,88 @@
   <div class="section" id="gcc">
 <h1>GCC<a class="headerlink" href="#gcc" title="Permalink to this headline">¶</a></h1>
 <p>The GNU Compiler Collection is a compiler system produced by the GNU Project supporting various programming languages. GCC is a key component of the GNU toolchain and the standard compiler for most projects related to GNU and Linux, including the Linux kernel.</p>
-<div class="section" id="steps-invloved-in-gcc-compilation">
-<h2>Steps invloved in GCC compilation<a class="headerlink" href="#steps-invloved-in-gcc-compilation" title="Permalink to this headline">¶</a></h2>
-</div>
+<div class="section" id="steps-how-gcc-carries-out-compilation">
+<h2>Steps how GCC carries out compilation<a class="headerlink" href="#steps-how-gcc-carries-out-compilation" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="preprocessing">
-<h2>1. Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">¶</a></h2>
+<h3>1. Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>It take all the header files includes them into your source code</p></li>
+<li><p>It expands &amp; inline solve your macros</p></li>
+<li><p>It strips out all the comments</p></li>
+</ul>
+<p>Create a simple files <code class="docutils literal notranslate"><span class="pre">sample.c</span></code></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>#include <span class="p">&lt;</span><span class="nt">stdio.h</span><span class="p">&gt;</span>
+
+int main(void){
+    printf(&quot;Hello World :)\n&quot;);
+}
+</pre></div>
+</div>
+<p>This is pre-processing step. -o <code class="docutils literal notranslate"><span class="pre">sample.exp.c</span></code> for output of the <code class="docutils literal notranslate"><span class="pre">sample.c</span></code></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>gcc -E -o sample.exp.c sample.c
+</pre></div>
+</div>
+<p>Output, all the header information from <code class="docutils literal notranslate"><span class="pre">stdio.h</span></code></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If there was any comment,there you would notice the comment was gone</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../../_images/output.png"><img alt="../../../_images/output.png" class="align-center" src="../../../_images/output.png" style="width: 500px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="compilation">
+<h3>2. Compilation<a class="headerlink" href="#compilation" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>It does semantic analysis of your actual code</p></li>
+<li><p>It checks it for errors it removes dead code &amp; removes unreachabke code</p></li>
+<li><p>If you specify a type of optimization it goes &amp; runs those passes</p></li>
+</ul>
+<p>Now compiling this into assembly, if you don’t provide a output file it will create the name of the file except with essence</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>gcc -S sample.exp.c
+</pre></div>
+</div>
+<p>output file name:-  <code class="docutils literal notranslate"><span class="pre">sample.exp.s</span></code></p>
+<p>This is actually assembly code</p>
+<a class="reference internal image-reference" href="../../../_images/compilation.png"><img alt="../../../_images/compilation.png" class="align-center" src="../../../_images/compilation.png" style="width: 250px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="converting-it-in-assembly-language">
+<h3>3. Converting it in assembly language<a class="headerlink" href="#converting-it-in-assembly-language" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>At this point your code is now in assembly</p></li>
+<li><p>Then it goes through assembly which converts it to an actual object file</p></li>
+</ul>
+<p>Creating a object file using assembly code file <code class="docutils literal notranslate"><span class="pre">sample.exp.s</span></code></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>gcc -c sample.exp.s
+</pre></div>
+</div>
+<p>Output filename :- <code class="docutils literal notranslate"><span class="pre">sample.exp.o</span></code></p>
+<a class="reference internal image-reference" href="../../../_images/objectFile.png"><img alt="../../../_images/objectFile.png" class="align-center" src="../../../_images/objectFile.png" style="width: 500px;" /></a>
+<p>Give a name to object file which will be our executbale</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>gcc -o executable sample.exp.o
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="linking">
+<h3>4. Linking<a class="headerlink" href="#linking" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Finally it goes thorugh linking</p></li>
+<li><p>Takes that object file it combines it with any libraries that are present &amp; also possibly the c standard library</p></li>
+<li><p>At this point you now have the executable</p></li>
+</ul>
+<p>Run the file</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>.\executable
+</pre></div>
+</div>
+<img alt="../../../_images/executable.png" src="../../../_images/executable.png" />
+</div></blockquote>
+</div>
 </div>
 </div>
 
