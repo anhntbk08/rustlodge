@@ -10,14 +10,7 @@ RustLodge
 .. toctree::
    :maxdepth: 1
 
-   Code Flow in Rust Code <./codeFlow/index.rst>
-   GCC <./gcc/index.rst>
-   Rust Compiler <./rustCompiler/index.rst>
-   History of Rust <./history/index.rst>
-   Memory Safety <./memorySafety/index.rst>
-   Servo Engine <./servoEngine/index.rst>
-   Git From Source <./gitFromSource/index.rst>
-   Environment Setup <./environmentSetup/index.rst>
+   Introduction to Rust <./introduction/index.rst>
 
 
 
