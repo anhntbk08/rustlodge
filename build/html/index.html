@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Environment Setup &#8212; rustLodge 1.0 documentation</title>
+    <title>RustLodge &#8212; rustLodge 1.0 documentation</title>
     
   <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -44,6 +44,7 @@
     <script src="_static/custom.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Environment Setup" href="environmentSetup/index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
   </head>
@@ -64,6 +65,14 @@
     <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
       <ul id="navbar-main-elements" class="navbar-nav mr-auto">
         
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="environmentSetup/index.html">Environment Setup</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="codeFlow/index.html">Code Flow in Rust Code</a>
+        </li>
         
         
       </ul>
@@ -94,6 +103,10 @@
   
     <ul class="nav bd-sidenav">
         
+        
+        
+        
+        
       </ul>
   
   </nav>
@@ -103,24 +116,9 @@
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
               
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
 
 <nav id="bd-toc-nav">
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#setting-rustc" class="nav-link">Setting Rustc</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#installing-plugins" class="nav-link">Installing Plugins</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#running-the-project" class="nav-link">Running the project</a>
-        </li>
     
     </ul>
 </nav>
@@ -135,63 +133,13 @@
               
               <div>
                 
-  <div class="section" id="environment-setup">
-<h1>Environment Setup<a class="headerlink" href="#environment-setup" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="setting-rustc">
-<h2>Setting Rustc<a class="headerlink" href="#setting-rustc" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Open terminal and enter the following command</p></li>
+  <div class="section" id="rustlodge">
+<h1>RustLodge<a class="headerlink" href="#rustlodge" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="environmentSetup/index.html">Environment Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codeFlow/index.html">Code Flow in Rust Code</a></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl https://sh.rustup.rs -sSf <span class="p">|</span> sh
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Choose ‘Proceed with installation (default)’ by entering 1</p></li>
-</ul>
-<p>You should get a message after installation saying:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Rust is installed now. Great!
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Add the following line to your ~/.bash_profile :</p></li>
-</ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>”<span class="nv">$HOME</span>/.cargo/bin:<span class="nv">$PATH</span>”
-</pre></div>
-</div>
-<p>Run the following command :</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo cp ~/.cargo/bin/rustc /usr/local/bin/
-</pre></div>
-</div>
-<p>Run the following command to check if Rust is installed successfully :</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rustc --version
-</pre></div>
-</div>
-</div>
-<div class="section" id="installing-plugins">
-<h2>Installing Plugins<a class="headerlink" href="#installing-plugins" title="Permalink to this headline">¶</a></h2>
-<p>Open IDE and go to <code class="docutils literal notranslate"><span class="pre">Plugins</span></code>.</p>
-<img alt="_images/image.png" src="_images/image.png" />
-<p>Search for <code class="docutils literal notranslate"><span class="pre">Toml</span></code>, <code class="docutils literal notranslate"><span class="pre">Rust</span></code> and <code class="docutils literal notranslate"><span class="pre">Rainbow</span> <span class="pre">Brackets</span></code> and install them.</p>
-<img alt="_images/new1.png" src="_images/new1.png" />
-<img alt="_images/new2.png" src="_images/new2.png" />
-<p>Install and click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p>
-<img alt="_images/new3.png" src="_images/new3.png" />
-</div>
-<div class="section" id="running-the-project">
-<h2>Running the project<a class="headerlink" href="#running-the-project" title="Permalink to this headline">¶</a></h2>
-<p>Restart the IDE and click <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Project</span></code>.</p>
-<img alt="_images/new5.png" src="_images/new5.png" />
-<p>Select <code class="docutils literal notranslate"><span class="pre">Rust</span></code>.</p>
-<img alt="_images/new4.png" src="_images/new4.png" />
-<p>Name your project.</p>
-<img alt="_images/RustInstallDoc10.png" src="_images/RustInstallDoc10.png" />
-<p>The project will be shown as this. Build the project.</p>
-<img alt="_images/new6.png" src="_images/new6.png" />
-<img alt="_images/new7.png" src="_images/new7.png" />
-<p>Run the Project.</p>
-<img alt="_images/new8.png" src="_images/new8.png" />
-<p>The output will be displayed as shown below.</p>
-<img alt="_images/new9.png" src="_images/new9.png" />
 </div>
 </div>
 
@@ -201,6 +149,7 @@
               
               <div class='prev-next-bottom'>
                 
+    <a class='right-next' id="next-link" href="environmentSetup/index.html" title="next page">Environment Setup</a>
 
               </div>
               
