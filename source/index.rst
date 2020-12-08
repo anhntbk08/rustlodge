@@ -11,6 +11,8 @@ RustLodge
    :maxdepth: 1
 
    Introduction to Rust <./introduction/index.rst>
+   Rust Examples <./rustExamples/index.rst>
+
 
 
 
