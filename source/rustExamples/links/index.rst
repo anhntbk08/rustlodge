@@ -5,13 +5,7 @@ Links
 
 * https://doc.rust-lang.org/rust-by-example/variable_bindings.html
 
-* https://doc.rust-lang.org/rust-by-example/variable_bindings.html
-
 * https://doc.rust-lang.org/rust-by-example/variable_bindings/mut.html
-
-* https://doc.rust-lang.org/rust-by-example/variable_bindings/mut.html
-
-* https://doc.rust-lang.org/rust-by-example/variable_bindings/declare.html
 
 * https://doc.rust-lang.org/rust-by-example/variable_bindings/declare.html
 
