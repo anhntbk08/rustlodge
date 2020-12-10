@@ -10,3 +10,4 @@ Introduction to Rust
    Servo Engine <./servoEngine/index.rst>
    Source Code <./sourceCode/index.rst>
    Environment Setup <./environmentSetup/index.rst>
+   Examples <examples/index.rst>
