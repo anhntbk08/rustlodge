@@ -8,6 +8,8 @@ Introduction to Rust
    Rust Compiler <./rustCompiler/index.rst>
    Memory Safety <./memorySafety/index.rst>
    Servo Engine <./servoEngine/index.rst>
-   Source Code <./sourceCode/index.rst>
+   Code Flow in Rust Code <./codeFlow/index.rst>
+   Git From Source <./gitFromSource/index.rst>
+   GCC <./gcc/index.rst>
    Environment Setup <./environmentSetup/index.rst>
    Rust Questions <examples/index.rst>

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Source Code &#8212; rustLodge 1.0 documentation</title>
+    <title>Code Flow in Rust &#8212; rustLodge 1.0 documentation</title>
     
   <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -44,7 +44,7 @@
     <script src="../../_static/custom.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Code Flow in Rust" href="codeFlow/index.html" />
+    <link rel="next" title="Git from Source" href="../gitFromSource/index.html" />
     <link rel="prev" title="Servo engine" href="../servoEngine/index.html" />
 
 <!-- Datatable -->
@@ -149,24 +149,20 @@
             
           
             
-  
                 <li class="active">
-                    <a href="">Source Code</a>
-                    <ul>
-                    
-                        <li class="">
-                            <a href="codeFlow/index.html">Code Flow in Rust Code</a>
-                        </li>
-                    
-                        <li class="">
-                            <a href="gitFromSource/index.html">Git From Source</a>
-                        </li>
-                    
-                        <li class="">
-                            <a href="gcc/index.html">GCC</a>
-                        </li>
-                    
-                    </ul>
+                    <a href="">Code Flow in Rust Code</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../gitFromSource/index.html">Git From Source</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../gcc/index.html">GCC</a>
                 </li>
             
           
@@ -193,9 +189,20 @@
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
               
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
     <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#how-llvm-works" class="nav-link">How LLVM Works</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#how-rust-is-compiled-using-llvm-as-a-backend" class="nav-link">How Rust is compiled using LLVM as a backend</a>
+        </li>
     
     </ul>
 </nav>
@@ -210,34 +217,28 @@
               
               <div>
                 
-  <div class="section" id="source-code">
-<h1>Source Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="codeFlow/index.html">Code Flow in Rust Code</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="codeFlow/index.html#how-llvm-works">How LLVM Works</a></li>
-<li class="toctree-l2"><a class="reference internal" href="codeFlow/index.html#how-rust-is-compiled-using-llvm-as-a-backend">How Rust is compiled using LLVM as a backend</a></li>
+  <div class="section" id="code-flow-in-rust">
+<h1>Code Flow in Rust<a class="headerlink" href="#code-flow-in-rust" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="how-llvm-works">
+<h2>How LLVM Works<a class="headerlink" href="#how-llvm-works" title="Permalink to this headline">¶</a></h2>
+<p><strong>LLVM has 3 main parts or stages in compilation :</strong></p>
+<ul class="simple">
+<li><p>Taking input from the compiler of a high-level language</p></li>
+<li><p>Creating IR(Intermediary Representation) from the high level language code</p></li>
+<li><p>Giving output as IR to the specified target which is the ISA for binary creation</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="gitFromSource/index.html">Git From Source</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gitFromSource/index.html#install-git-essential">1. Install Git essential</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gitFromSource/index.html#in-browser-got-to-git-via-git">2. In browser got to Git via Git</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gitFromSource/index.html#go-into-git-dir">3. Go into git dir.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gitFromSource/index.html#run-make-config">4. Run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">config</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="gitFromSource/index.html#update-and-install-dependencies">5. Update and Install Dependencies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gitFromSource/index.html#go-into-git-dir-run-make-all">6. Go into git dir &amp; run make all</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gitFromSource/index.html#run-make-install">7. Run make install</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gitFromSource/index.html#check-out-all-the-executable-files-are-existing-in-the-bin-dir">8. Check out all the executable files are existing in the bin dir</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gitFromSource/index.html#check-git-version-in-the-git-dir">9. Check git version in the git dir</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gitFromSource/index.html#check-git-version-on-the-base">10. Check git version on the base</a></li>
+<img alt="../../_images/llvm.jpeg" src="../../_images/llvm.jpeg" />
+</div>
+<div class="section" id="how-rust-is-compiled-using-llvm-as-a-backend">
+<h2>How Rust is compiled using LLVM as a backend<a class="headerlink" href="#how-rust-is-compiled-using-llvm-as-a-backend" title="Permalink to this headline">¶</a></h2>
+<p><strong>Rust high-level code is compiled like this :</strong></p>
+<ul class="simple">
+<li><p>First, the type checking and borrow checking operations are performed after scanning the code.</p></li>
+<li><p>The code is then parsed conforming to the rules. This created an LLVM-IR. The LLVM-IR is platform independent and can be run on any ISA for which the target has been defined in LLVM.</p></li>
+<li><p>After that the code is optimized(replacing redundant references, removing comments etc.).</p></li>
+<li><p>The Rust compiler then calls LLVM backend which performs semantic analysis and finally creates a binary for the target system.</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="gcc/index.html">GCC</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gcc/index.html#steps-how-gcc-carries-out-compilation">Steps how GCC carries out compilation</a></li>
-</ul>
-</li>
-</ul>
+<img alt="../../_images/RustCodeFlow.png" src="../../_images/RustCodeFlow.png" />
 </div>
 </div>
 
@@ -248,7 +249,7 @@
               <div class='prev-next-bottom'>
                 
     <a class='left-prev' id="prev-link" href="../servoEngine/index.html" title="previous page">Servo engine</a>
-    <a class='right-next' id="next-link" href="codeFlow/index.html" title="next page">Code Flow in Rust</a>
+    <a class='right-next' id="next-link" href="../gitFromSource/index.html" title="next page">Git from Source</a>
 
               </div>
               
