@@ -13,3 +13,4 @@ Introduction to Rust
    GCC <./gcc/index.rst>
    Environment Setup <./environmentSetup/index.rst>
    Rust Questions <examples/index.rst>
+   RustAlgorithms <./rustAlgorithms/index.rst>
