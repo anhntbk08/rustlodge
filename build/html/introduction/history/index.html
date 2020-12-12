@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History of Rust &#8212; rustLodge 1.0 documentation</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/my_theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sheet.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/custom.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Rust Compiler" href="../rustCompiler/index.html" />
+    <link rel="prev" title="Rust Books" href="../books/index.html" />
+
+<!-- Datatable -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js">
+</script>
+
+<!-- VUE -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+
+<!-- Mermaid Js -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+
+<!-- Vuetify -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet"> -->
+
+<!-- Timeline -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue-cute-timeline@1.2.8/dist/vue-cute-timeline.min.js"></script> -->
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../../index.html">
+    
+      <p class="title">rustLodge</p>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Introduction to Rust</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+          
+            
+                <li class="">
+                    <a href="../books/index.html">Rust Books</a>
+                </li>
+            
+          
+            
+                <li class="active">
+                    <a href="">History of Rust</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../rustCompiler/index.html">Rust Compiler</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../memorySafety/index.html">Memory Safety</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../servoEngine/index.html">Servo Engine</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../codeFlow/index.html">Code Flow in Rust Code</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../gitFromSource/index.html">Git From Source</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../gcc/index.html">GCC</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../environmentSetup/index.html">Environment Setup</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../rustCargo/index.html">Rust using cargo</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../examples/index.html">Rust Questions</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../rustAlgorithms/index.html">RustAlgorithms</a>
+                </li>
+            
+          
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#features" class="nav-link">Features</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#important-people" class="nav-link">Important people</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#companies-products-using-rust" class="nav-link">Companies & Products using Rust</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#future-of-rust" class="nav-link">Future of Rust</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#reference" class="nav-link">Reference</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="history-of-rust">
+<h1>History of Rust<a class="headerlink" href="#history-of-rust" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../../_images/rustLogo.png"><img alt="../../_images/rustLogo.png" class="align-center" src="../../_images/rustLogo.png" style="width: 250px;" /></a>
+<img alt="../../_images/t.png" src="../../_images/t.png" />
+<p>Rust began as a side project of <a class="reference external" href="https://github.com/graydon/rust">Graydon Hoare</a> , an employee at <a class="reference external" href="https://research.mozilla.org/rust/">Mozilla</a> . In short order, Mozilla saw the potential of the new language and began sponsoring it, before revealing it to the world in 2010.
+With contributions from <a class="reference external" href="https://engineering.linkedin.com/blog/2017/11/getting-to-know-dave-herman">Dave Herman</a>, Brendan Eich, and others. The designers refined the language while writing the <a class="reference external" href="https://servo.org/">Servo</a> layout or browser engine, and the Rust compiler.
+It has gained increasing use in industry, and Microsoft has been experimenting with the language for secure and safety-critical software components.</p>
+<p>What makes Rust stand out from all other languages is its marriage of low-level control with uncompromising safety</p>
+<p>Rust is a multi-paradigm programming language designed for performance and safety, especially safe concurrency. In terms of syntax, Rust is similar to C and C++, incorporating many of the keywords and commands from both languages. It is not a direct clone, however, and has some elements not found in either C or C++.,
+but can guarantee memory safety by using a borrow checker to validate references. Rust achieves <a class="reference external" href="https://hacks.mozilla.org/2019/01/fearless-security-memory-safety/">memory safety</a> without garbage collection, and reference counting is optional.</p>
+<p><code class="docutils literal notranslate"><span class="pre">rustc</span></code> is the compiler for the Rust programming language, provided by the project itself. Compilers take your source code and produce binary code, either as a library or executable.</p>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="important-people">
+<h2>Important people<a class="headerlink" href="#important-people" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>Designed by: <a class="reference external" href="https://github.com/graydon/rust">Graydon Hoare</a></p></li>
+<li><p><a class="reference external" href="https://www.rust-lang.org/governance/teams/compiler">Compiler team</a></p></li>
+<li><p><a class="reference external" href="https://prev.rust-lang.org/en-US/team.html">The Rust Team</a></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="companies-products-using-rust">
+<h2>Companies &amp; Products using Rust<a class="headerlink" href="#companies-products-using-rust" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://dropbox.tech/infrastructure/rewriting-the-heart-of-our-sync-engine">Dropbox</a></p></li>
+<li><p>Coursera</p></li>
+<li><p><a class="reference external" href="https://www.figma.com/blog/rust-in-production-at-figma/">Figma</a></p></li>
+<li><p><a class="reference external" href="https://www.rust-lang.org/static/pdfs/Rust-npm-Whitepaper.pdf">npm</a></p></li>
+<li><p>Microsoft</p></li>
+<li><p><a class="reference external" href="https://blog.cloudflare.com/building-even-faster-interpreters-in-rust/">Cloudflare</a></p></li>
+<li><p><a class="reference external" href="https://github.com/facebookexperimental/rust-shed">Facebook</a></p></li>
+<li><p><a class="reference external" href="https://aws.amazon.com/blogs/opensource/aws-sponsorship-of-the-rust-project/">Amazon</a></p></li>
+<li><p><a class="reference external" href="https://forge.rust-lang.org/platforms/discord.html">Discord</a></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="future-of-rust">
+<h2>Future of Rust<a class="headerlink" href="#future-of-rust" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="reference">
+<h2>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=79PSagCD_AY">The History of Rust</a></p></li>
+<li><p><a class="reference external" href="https://www.nature.com/articles/d41586-020-03382-2">Why scientists are turning to Rust</a></p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="../books/index.html" title="previous page">Rust Books</a>
+    <a class='right-next' id="next-link" href="../rustCompiler/index.html" title="next page">Rust Compiler</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+     <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2020, dev.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.3.0.<br/>
+    </p>
+  </div>
+</footer>
+
+
+  </body>
+</html>

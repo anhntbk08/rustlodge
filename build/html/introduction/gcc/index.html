@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GCC &#8212; rustLodge 1.0 documentation</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/my_theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sheet.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/custom.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Environment Setup" href="../environmentSetup/index.html" />
+    <link rel="prev" title="Git from Source" href="../gitFromSource/index.html" />
+
+<!-- Datatable -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js">
+</script>
+
+<!-- VUE -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+
+<!-- Mermaid Js -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+
+<!-- Vuetify -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet"> -->
+
+<!-- Timeline -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue-cute-timeline@1.2.8/dist/vue-cute-timeline.min.js"></script> -->
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../../index.html">
+    
+      <p class="title">rustLodge</p>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Introduction to Rust</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+          
+            
+                <li class="">
+                    <a href="../books/index.html">Rust Books</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../history/index.html">History of Rust</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../rustCompiler/index.html">Rust Compiler</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../memorySafety/index.html">Memory Safety</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../servoEngine/index.html">Servo Engine</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../codeFlow/index.html">Code Flow in Rust Code</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../gitFromSource/index.html">Git From Source</a>
+                </li>
+            
+          
+            
+                <li class="active">
+                    <a href="">GCC</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../environmentSetup/index.html">Environment Setup</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../rustCargo/index.html">Rust using cargo</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../examples/index.html">Rust Questions</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../rustAlgorithms/index.html">RustAlgorithms</a>
+                </li>
+            
+          
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#steps-how-gcc-carries-out-compilation" class="nav-link">Steps how GCC carries out compilation</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#preprocessing" class="nav-link">1. Preprocessing</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#compilation" class="nav-link">2. Compilation</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#converting-it-in-assembly-language" class="nav-link">3. Converting it in assembly language</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#linking" class="nav-link">4. Linking</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="gcc">
+<h1>GCC<a class="headerlink" href="#gcc" title="Permalink to this headline">¶</a></h1>
+<p>The GNU Compiler Collection is a compiler system produced by the GNU Project supporting various programming languages. GCC is a key component of the GNU toolchain and the standard compiler for most projects related to GNU and Linux, including the Linux kernel.</p>
+<div class="section" id="steps-how-gcc-carries-out-compilation">
+<h2>Steps how GCC carries out compilation<a class="headerlink" href="#steps-how-gcc-carries-out-compilation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="preprocessing">
+<h3>1. Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>It take all the header files includes them into your source code</p></li>
+<li><p>It expands &amp; inline solve your macros</p></li>
+<li><p>It strips out all the comments</p></li>
+</ul>
+<p>Create a simple files <code class="docutils literal notranslate"><span class="pre">sample.c</span></code></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>#include <span class="p">&lt;</span><span class="nt">stdio.h</span><span class="p">&gt;</span>
+
+int main(void){
+    printf(&quot;Hello World :)\n&quot;);
+}
+</pre></div>
+</div>
+<p>This is pre-processing step. -o <code class="docutils literal notranslate"><span class="pre">sample.exp.c</span></code> for output of the <code class="docutils literal notranslate"><span class="pre">sample.c</span></code></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>gcc -E -o sample.exp.c sample.c
+</pre></div>
+</div>
+<p>Output, all the header information from <code class="docutils literal notranslate"><span class="pre">stdio.h</span></code></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If there was any comment,there you would notice the comment was gone</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/output.png"><img alt="../../_images/output.png" class="align-center" src="../../_images/output.png" style="width: 500px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="compilation">
+<h3>2. Compilation<a class="headerlink" href="#compilation" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>It does semantic analysis of your actual code</p></li>
+<li><p>It checks it for errors it removes dead code &amp; removes unreachabke code</p></li>
+<li><p>If you specify a type of optimization it goes &amp; runs those passes</p></li>
+</ul>
+<p>Now compiling this into assembly, if you don’t provide a output file it will create the name of the file except with essence</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>gcc -S sample.exp.c
+</pre></div>
+</div>
+<p>output file name:-  <code class="docutils literal notranslate"><span class="pre">sample.exp.s</span></code></p>
+<p>This is actually assembly code</p>
+<a class="reference internal image-reference" href="../../_images/compilation.png"><img alt="../../_images/compilation.png" class="align-center" src="../../_images/compilation.png" style="width: 250px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="converting-it-in-assembly-language">
+<h3>3. Converting it in assembly language<a class="headerlink" href="#converting-it-in-assembly-language" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>At this point your code is now in assembly</p></li>
+<li><p>Then it goes through assembly which converts it to an actual object file</p></li>
+</ul>
+<p>Creating a object file using assembly code file <code class="docutils literal notranslate"><span class="pre">sample.exp.s</span></code></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>gcc -c sample.exp.s
+</pre></div>
+</div>
+<p>Output filename :- <code class="docutils literal notranslate"><span class="pre">sample.exp.o</span></code></p>
+<a class="reference internal image-reference" href="../../_images/objectFile.png"><img alt="../../_images/objectFile.png" class="align-center" src="../../_images/objectFile.png" style="width: 500px;" /></a>
+<p>Give a name to object file which will be our executbale</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>gcc -o executable sample.exp.o
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="linking">
+<h3>4. Linking<a class="headerlink" href="#linking" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Finally it goes thorugh linking</p></li>
+<li><p>Takes that object file it combines it with any libraries that are present &amp; also possibly the c standard library</p></li>
+<li><p>At this point you now have the executable</p></li>
+</ul>
+<p>Run the file</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>.\executable
+</pre></div>
+</div>
+<img alt="../../_images/executable.png" src="../../_images/executable.png" />
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="../gitFromSource/index.html" title="previous page">Git from Source</a>
+    <a class='right-next' id="next-link" href="../environmentSetup/index.html" title="next page">Environment Setup</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+     <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2020, dev.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.3.0.<br/>
+    </p>
+  </div>
+</footer>
+
+
+  </body>
+</html>

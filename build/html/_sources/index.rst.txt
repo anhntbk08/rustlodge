@@ -10,8 +10,8 @@ RustLodge
 .. toctree::
    :maxdepth: 1
 
-   Environment Setup <./environmentSetup/index.rst>
-   Code Flow in Rust Code <./codeFlow/index.rst>
+   Introduction to Rust <./introduction/index.rst>
+
 
 
 
