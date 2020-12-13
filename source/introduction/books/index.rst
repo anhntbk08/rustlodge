@@ -38,7 +38,7 @@ Rust Books
 
 * :download:`Rust Programming By Example Enter the world of Rust by building engaging, concurrent, reactive, and robust application <pdf/RustProgrammingByExampleEntertheworldOfRustbuildingengagingconcurrentreactiveandrobustapplicationsGuillaumeGomezAntoniBoucher.pdf>`
 
-* :download:`Rust Standard Library Cookbook Over 75 recipes to leverage the power of Rust by Jan Nils Ferner Daniel Durante <source/introduction/books/pdf/RustStandardLibraryCookbookOver75recipestoleverage thepowerfRustbyJanNilsFernerDanielDurante.pdf>`
+* :download:`Rust Standard Library Cookbook Over 75 recipes to leverage the power of Rust by Jan Nils Ferner Daniel Durante <pdf/RustStandardLibraryCookbookOver75recipestoleverage thepowerfRustbyJanNilsFernerDanielDurante.pdf>`
 
 * :download:`The Complete Rust Programming Reference Guide by Rahul Sharma Vesa Kaihlavirta Claus Matzinger <pdf/TheCompleteRustProgrammingReferenceGuidebyRahlSharmaVesaKaihlavirtaClausMatzinger.pdf>`
 
