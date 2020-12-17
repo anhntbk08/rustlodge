@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edc75ef8-a901-4f8c-8a25-8c0d08204387" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/rustExamples/examples/index.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/rustExamples/index.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/rustExamples/links/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/environmentSetup/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/environmentSetup/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/history/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/history/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/memorySafety/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/memorySafety/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/rustCompiler/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/rustCompiler/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/servoEngine/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/servoEngine/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/sourceCode/codeFlow/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/sourceCode/codeFlow/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/sourceCode/gcc/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/sourceCode/gcc/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/sourceCode/gitFromSource/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/sourceCode/gitFromSource/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/sourceCode/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/sourceCode/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/genindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/environmentSetup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction/environmentSetup/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/history/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction/history/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/memorySafety/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction/memorySafety/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/rustCompiler/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction/rustCompiler/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/servoEngine/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction/servoEngine/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/sourceCode/codeFlow/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction/sourceCode/codeFlow/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/sourceCode/gcc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction/sourceCode/gcc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/sourceCode/gitFromSource/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction/sourceCode/gitFromSource/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/sourceCode/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction/sourceCode/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/objects.inv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +24,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -78,7 +47,7 @@
       <updated>1606881258030</updated>
       <workItem from="1606881260212" duration="2883000" />
       <workItem from="1607119132130" duration="184000" />
-      <workItem from="1607428395436" duration="651000" />
+      <workItem from="1607428395436" duration="1595000" />
     </task>
     <servers />
   </component>

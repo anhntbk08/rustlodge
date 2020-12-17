@@ -16,3 +16,4 @@ Introduction to Rust
    Rust using cargo <./rustCargo/index.rst>
    Rust Questions <examples/index.rst>
    RustAlgorithms <./rustAlgorithms/index.rst>
+   Rust Comments <./rustComments/index.rst>
