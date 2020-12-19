@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Types And Variable Declaration &#8212; rustLodge 1.0 documentation</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/my_theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/s4defs-roles.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sheet.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/custom.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="History of Rust" href="../history/index.html" />
+    <link rel="prev" title="Rust Books" href="../books/index.html" />
+
+<!-- Datatable -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js">
+</script>
+
+<!-- VUE -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+
+<!-- Mermaid Js -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+
+<!-- Vuetify -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet"> -->
+
+<!-- Timeline -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue-cute-timeline@1.2.8/dist/vue-cute-timeline.min.js"></script> -->
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../../index.html">
+    
+      <p class="title">rustLodge</p>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Introduction to Rust</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+          
+            
+                <li class="">
+                    <a href="../books/index.html"> Rust Books</a>
+                </li>
+            
+          
+            
+                <li class="active">
+                    <a href=""> Data Types and Variable Declaration</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../history/index.html"> History of Rust</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../rustCompiler/index.html"> Rust Compiler</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../memorySafety/index.html"> Memory Safety</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../servoEngine/index.html"> Servo Engine</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../codeFlow/index.html"> Code Flow in Rust Code</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../gitFromSource/index.html"> Git From Source</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../gcc/index.html"> GCC</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../environmentSetup/index.html"> Environment Setup</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../rustCargo/index.html"> Rust using cargo</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../examples/index.html"> Rust Questions</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../rustAlgorithms/index.html"> RustAlgorithms</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../binaryVsLibrary/index.html"> Binary vs Library</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="../rustComments/index.html"> Rust Comments</a>
+                </li>
+            
+          
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#rusts-data-types-serve-several-goals" class="nav-link">Rust’s data types serve several goals:</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#data-types" class="nav-link">Data Types</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#int-integer" class="nav-link">Int (Integer)</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#f-float" class="nav-link">F (Float)</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#bool-boolean" class="nav-link">Bool (Boolean)</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#char-character" class="nav-link">Char (Character)</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#string-string" class="nav-link">String (String)</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#tuple-tuple" class="nav-link">Tuple (Tuple)</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#slice-slice" class="nav-link">Slice (Slice)</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#struct-structure" class="nav-link">Struct (Structure)</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#enum-enumeration" class="nav-link">Enum (Enumeration)</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#box-box" class="nav-link">Box (Box)</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#vec-vector" class="nav-link">Vec (Vector)</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#pointers" class="nav-link">Pointers</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="data-types-and-variable-declaration">
+<h1>Data Types And Variable Declaration<a class="headerlink" href="#data-types-and-variable-declaration" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="rusts-data-types-serve-several-goals">
+<h2>Rust’s data types serve several goals:<a class="headerlink" href="#rusts-data-types-serve-several-goals" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Safety</p></li>
+</ul>
+<p>By checking a program’s types, the Rust compiler
+rules out whole classes of common mistakes. By
+replacing null pointers and unchecked unions with
+type-safe alternatives, Rust is even able to eliminate
+errors that are common sources of crashes in other
+languages.</p>
+<ul class="simple">
+<li><p>Efficiency</p></li>
+</ul>
+<p>Programmers have fine-grained control over how
+Rust programs represent values in memory, and can
+choose types they know the processor will handle
+efficiently. Programs needn’t pay for generality or
+flexibility they don’t use.</p>
+<ul class="simple">
+<li><p>Concision</p></li>
+</ul>
+<p>Rust manages all of this without requiring too much
+guidance from the programmer in the form of types
+written out in the code.</p>
+</div>
+<div class="section" id="data-types">
+<h2>Data Types<a class="headerlink" href="#data-types" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="int-integer">
+<h2><strong>Int (Integer)</strong><a class="headerlink" href="#int-integer" title="Permalink to this headline">¶</a></h2>
+<p>Takes integer values and is further divided into 2 types :</p>
+<ul class="simple">
+<li><p>Signed (denoted by i immediately after the colon)</p></li>
+</ul>
+<p>Takes positive as well as negative whole number values. For e.g. 34, -63 etc.</p>
+<p>Signed integer is written as :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span><span class="w"> </span><span class="n">a</span>:<span class="kt">i32</span> <span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This will create an immutable variable a and bind it with the value <code class="docutils literal notranslate"><span class="pre">3</span></code>. <code class="docutils literal notranslate"><span class="pre">i</span></code> denotes that the datatype is
+a signed integer. The number after <code class="docutils literal notranslate"><span class="pre">i</span></code> determines how many bits to assign in the memory location for the
+variable that has been declared. The default value is 32 bits. Other values are 8, 16, 64 and 128 bits.</p>
+<ul class="simple">
+<li><p>Unsigned (denoted by u immediately after the colon)</p></li>
+</ul>
+<p>Takes only positive whole number values. For e.g. 34, 3263, 0 etc.</p>
+<p>Unsigned integer is written as :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span><span class="w"> </span><span class="n">a</span>:<span class="kt">u32</span> <span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This will create an immutable variable a and bind it with the value <code class="docutils literal notranslate"><span class="pre">3</span></code>. <code class="docutils literal notranslate"><span class="pre">u</span></code> denotes that the datatype is
+an unsigned integer. The number after <code class="docutils literal notranslate"><span class="pre">u</span></code> determines how many bits to assign in the memory location for the
+variable that has been declared. The default value is 32 bits.</p>
+</div>
+<div class="section" id="f-float">
+<h2><strong>F (Float)</strong><a class="headerlink" href="#f-float" title="Permalink to this headline">¶</a></h2>
+<p>Takes floating-point values :</p>
+<p>Float is written as :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span><span class="w"> </span><span class="n">a</span>:<span class="kt">f32</span> <span class="o">=</span><span class="w"> </span><span class="mf">1.1568</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This will create an immutable variable a and bind it with the value <code class="docutils literal notranslate"><span class="pre">3</span></code>. <code class="docutils literal notranslate"><span class="pre">f</span></code> denotes that the datatype is
+a float. The number after <code class="docutils literal notranslate"><span class="pre">f</span></code> determines how many bits to assign in the memory location for the
+variable that has been declared. The default value is 32 bits. Other values are 8, 16, 64 and 128 bits.</p>
+</div>
+<div class="section" id="bool-boolean">
+<h2><strong>Bool (Boolean)</strong><a class="headerlink" href="#bool-boolean" title="Permalink to this headline">¶</a></h2>
+<p>Takes boolean values i.e. true or false.</p>
+<p>Bool is written as :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span><span class="w"> </span><span class="n">a</span>:<span class="kt">bool</span> <span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This will create an immutable variable a and bind it with the value <code class="docutils literal notranslate"><span class="pre">true</span></code>. <code class="docutils literal notranslate"><span class="pre">bool</span></code> denotes that the datatype is
+a boolean.</p>
+</div>
+<div class="section" id="char-character">
+<h2><strong>Char (Character)</strong><a class="headerlink" href="#char-character" title="Permalink to this headline">¶</a></h2>
+<p>Takes values which span all permissible characters.</p>
+<p>Char is written as :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span><span class="w"> </span><span class="n">a</span>:<span class="kt">char</span> <span class="o">=</span><span class="w"> </span><span class="sc">&#39;%&#39;</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This will create an immutable variable a and bind it with the value <code class="docutils literal notranslate"><span class="pre">%</span></code>. <code class="docutils literal notranslate"><span class="pre">char</span></code> denotes that the datatype is
+a character. The character must be enclosed by single quotes and must not have more than one character.</p>
+</div>
+<div class="section" id="string-string">
+<h2><strong>String (String)</strong><a class="headerlink" href="#string-string" title="Permalink to this headline">¶</a></h2>
+<p>A string is a bunch of characters that are stored together inside the double quotes(“”).</p>
+<p>String is written as :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span><span class="w"> </span><span class="n">a</span>: <span class="kp">&amp;</span><span class="kt">str</span> <span class="o">=</span><span class="w"> </span><span class="s">&quot;This is a string&quot;</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This will create a string named <code class="docutils literal notranslate"><span class="pre">a</span></code> and assign it the value <code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">string</span></code>.
+All strings have to be inside the double quotes.</p>
+</div>
+<div class="section" id="tuple-tuple">
+<h2><strong>Tuple (Tuple)</strong><a class="headerlink" href="#tuple-tuple" title="Permalink to this headline">¶</a></h2>
+<p>A tuple is a collection of values of different types.</p>
+<p>Tuple is written as :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span><span class="w"> </span><span class="n">a</span>:<span class="p">(</span><span class="kt">i32</span><span class="p">,</span><span class="kt">f64</span><span class="p">,</span><span class="kt">u8</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="mi">325</span><span class="p">,</span><span class="mf">4.9</span><span class="p">,</span><span class="mi">22</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This will create a tuple named <code class="docutils literal notranslate"><span class="pre">a</span></code> with 3 different types of values. The values are then
+assigned respectively.</p>
+<p><strong>Array (Array)</strong></p>
+<p>An array is a collection of objects of the same type T, stored in contiguous memory. Arrays are created using brackets
+<code class="docutils literal notranslate"><span class="pre">[]</span></code>, and their length, which is known at compile time, is part of their type signature [T; length].</p>
+<p>An array is written as :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span><span class="w"> </span><span class="n">a</span>: <span class="p">[</span><span class="kt">i32</span><span class="p">;</span><span class="w"> </span><span class="mi">5</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">];</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This will create an array named <code class="docutils literal notranslate"><span class="pre">a</span></code> of type <code class="docutils literal notranslate"><span class="pre">i32</span></code> whose length is 5. The characters defined in the array are
+1, 2, 3, 4 &amp; 5 at the respective positions.</p>
+</div>
+<div class="section" id="slice-slice">
+<h2><strong>Slice (Slice)</strong><a class="headerlink" href="#slice-slice" title="Permalink to this headline">¶</a></h2>
+<p>Slices are similar to arrays, but their length is not known at compile time. Instead, a slice is a two-word object,
+the first word is a pointer to the data, and the second word is the length of the slice.</p>
+<p>We can create slices using a range within brackets by specifying [starting_index..ending_index], where starting_index
+is the first position in the slice and ending_index is one more than the last position in the slice. Internally, the
+slice data structure stores the starting position and the length of the slice, which corresponds to ending_index minus
+starting_index.</p>
+<p>A slice is written as :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="o">..</span><span class="mi">6</span><span class="p">];</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This creates a slice named <code class="docutils literal notranslate"><span class="pre">a</span></code> whose length is from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">6</span></code> in memory. The values can be added dynamically to
+the slice.</p>
+</div>
+<div class="section" id="struct-structure">
+<h2><strong>Struct (Structure)</strong><a class="headerlink" href="#struct-structure" title="Permalink to this headline">¶</a></h2>
+<p>There are three types of structures (<code class="docutils literal notranslate"><span class="pre">structs</span></code>) that can be created using the struct keyword:</p>
+<ul class="simple">
+<li><p>Tuple structs, which are, basically, named tuples.</p></li>
+<li><p>The classic C structs</p></li>
+<li><p>Unit structs, which are field-less, are useful for generics.</p></li>
+</ul>
+<p>Structs is written as :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="c1">// A unit struct</span>
+<span class="k">struct</span> <span class="nc">Unit</span><span class="p">;</span><span class="w"></span>
+
+<span class="c1">// A tuple struct</span>
+<span class="k">struct</span> <span class="nc">Pair</span><span class="p">(</span><span class="kt">i32</span><span class="p">,</span><span class="w"> </span><span class="kt">f32</span><span class="p">);</span><span class="w"></span>
+
+<span class="c1">// A struct with two fields</span>
+<span class="k">struct</span> <span class="nc">Point</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">x</span>: <span class="kt">f32</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">y</span>: <span class="kt">f32</span><span class="p">,</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="enum-enumeration">
+<h2><strong>Enum (Enumeration)</strong><a class="headerlink" href="#enum-enumeration" title="Permalink to this headline">¶</a></h2>
+<p>The enum keyword allows the creation of a type which may be one of a few different variants. Any variant
+which is valid as a struct is also valid as an enum.</p>
+<p>An enum is written as :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="k">enum</span> <span class="nc">WebEvent</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">PageLoad</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">PageUnload</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">KeyPress</span><span class="p">(</span><span class="kt">char</span><span class="p">),</span><span class="w"></span>
+<span class="w">    </span><span class="n">Paste</span><span class="p">(</span><span class="nb">String</span><span class="p">),</span><span class="w"></span>
+<span class="w">    </span><span class="n">Click</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">x</span>: <span class="kt">i64</span><span class="p">,</span><span class="w"> </span><span class="n">y</span>: <span class="kt">i64</span> <span class="p">},</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This creates an enum <code class="docutils literal notranslate"><span class="pre">WebEvent</span></code> which has 5 fields as described.</p>
+<p>A C-like enum :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="k">enum</span> <span class="nc">Number</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">Zero</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">One</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">Two</span><span class="p">,</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="box-box">
+<h2><strong>Box (Box)</strong><a class="headerlink" href="#box-box" title="Permalink to this headline">¶</a></h2>
+<p>All values in Rust are stack allocated by default. Values can be boxed (allocated on the heap) by creating a Box&lt;T&gt;.
+A box is a smart pointer to a heap allocated value of type T. When a box goes out of scope, its destructor is called,
+the inner object is destroyed, and the memory on the heap is freed.</p>
+<p>Boxed values can be dereferenced using the * operator; this removes one layer of indirection.</p>
+<p>The usage of <code class="docutils literal notranslate"><span class="pre">Box</span></code> can be seen as :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="nc">Point</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">x</span>: <span class="kt">f64</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">y</span>: <span class="kt">f64</span><span class="p">,</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">fn</span> <span class="nf">origin</span><span class="p">()</span><span class="w"> </span>-&gt; <span class="nc">Point</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">Point</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">x</span>: <span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="n">y</span>: <span class="mf">0.0</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">fn</span> <span class="nf">boxed_origin</span><span class="p">()</span><span class="w"> </span>-&gt; <span class="nb">Box</span><span class="o">&lt;</span><span class="n">Point</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Allocate this point on the heap, and return a pointer to it</span>
+<span class="w">    </span><span class="nb">Box</span>::<span class="n">new</span><span class="p">(</span><span class="n">Point</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">x</span>: <span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="n">y</span>: <span class="mf">0.0</span><span class="w"> </span><span class="p">})</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="vec-vector">
+<h2><strong>Vec (Vector)</strong><a class="headerlink" href="#vec-vector" title="Permalink to this headline">¶</a></h2>
+<p>Vectors are re-sizable arrays. Like slices, their size is not known at compile time, but they can grow or shrink at
+any time. A vector is represented using 3 parameters:</p>
+<ul class="simple">
+<li><p>Pointer to the data</p></li>
+<li><p>Length</p></li>
+<li><p>Capacity</p></li>
+</ul>
+<p>The capacity indicates how much memory is reserved for the vector. The vector can grow as long as the length is smaller
+than the capacity. When this threshold needs to be surpassed, the vector is reallocated with a larger capacity.</p>
+<p>A vector can be written as :</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="n">Let</span><span class="w"> </span><span class="n">v</span><span class="w"> </span>: <span class="nb">Vec</span><span class="o">&lt;</span><span class="kt">i32</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Vec</span>::<span class="n">new</span><span class="p">();</span><span class="w"></span>
+
+<span class="c1">//Initialise with the macro to make the initialization more convenient</span>
+<span class="kd">let</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vec</span><span class="o">!</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">];</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="pointers">
+<h2><strong>Pointers</strong><a class="headerlink" href="#pointers" title="Permalink to this headline">¶</a></h2>
+<p>A pointer is a general concept for a variable that contains an address in memory. This address refers to, or
+<code class="docutils literal notranslate"><span class="pre">points</span> <span class="pre">at</span></code> some other data.</p>
+<p>Types of pointers</p>
+<ul class="simple">
+<li><p><strong>Shared references (&amp;)</strong></p></li>
+</ul>
+<p>These point to memory owned by some other value. When a shared reference to a value is created it prevents direct
+mutation of the value.</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span><span class="w"> </span><span class="n">my_num</span>: <span class="kt">i32</span> <span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
+<span class="kd">let</span><span class="w"> </span><span class="n">my_num_ptr</span>: <span class="o">*</span><span class="k">const</span><span class="w"> </span><span class="kt">i32</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">my_num</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Mutable references (&amp;mut)</strong></p></li>
+</ul>
+<p>These also point to memory owned by some other value. A mutable reference type is written &amp;mut type or &amp;’a mut type.
+A mutable reference (that hasn’t been borrowed) is the only way to access the value it points to, so is not Copy.</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">my_speed</span>: <span class="kt">i32</span> <span class="o">=</span><span class="w"> </span><span class="mi">88</span><span class="p">;</span><span class="w"></span>
+<span class="kd">let</span><span class="w"> </span><span class="n">my_speed_ptr</span>: <span class="o">*</span><span class="k">mut</span><span class="w"> </span><span class="kt">i32</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="n">my_speed</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Raw pointers (*const and *mut)</strong></p></li>
+</ul>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="n">TypeNoBounds</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Raw pointers are pointers without safety or liveness guarantees. Raw pointers are written as <em>const T or *mut T,
+for example *const i32 means a raw pointer to a 32-bit integer. Copying or dropping a raw pointer has no effect
+on the lifecycle of any other value. Dereferencing a raw pointer is an unsafe operation, this can also be used
+to convert a raw pointer to a reference by reborrowing it (&amp;</em> or &amp;mut <a href="#id1"><span class="problematic" id="id2">*</span></a>).</p>
+<p><strong>Closures</strong></p>
+<p>Closures in Rust, also called lambda expressions or lambdas, are functions that can capture the enclosing environment.
+For example, a closure that captures the x variable:</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="o">|</span><span class="n">val</span><span class="o">|</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">x</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The syntax and capabilities of closures make them very convenient for on the fly usage. Calling a closure is exactly
+like calling a function. However, both input and return types can be inferred and input variable names must be specified.</p>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="../books/index.html" title="previous page">Rust Books</a>
+    <a class='right-next' id="next-link" href="../history/index.html" title="next page">History of Rust</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+     <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2020, dev.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
+  </div>
+</footer>
+
+
+  </body>
+</html>
