@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edc75ef8-a901-4f8c-8a25-8c0d08204387" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/dataTypesAndVariableDeclaration/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/dataTypesAndVariableDeclaration/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/dataTypesAndVariableDeclaration/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/introduction/dataTypesAndVariableDeclaration/index.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/dataTypesAndVariableDeclaration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction/dataTypesAndVariableDeclaration/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/index.rst" afterDir="false" />
-    </list>
+    <list default="true" id="edc75ef8-a901-4f8c-8a25-8c0d08204387" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +67,7 @@
       <workItem from="1607428395436" duration="651000" />
       <workItem from="1608231056211" duration="710000" />
       <workItem from="1607428395436" duration="1595000" />
-      <workItem from="1608325348204" duration="16801000" />
+      <workItem from="1608325348204" duration="17105000" />
     </task>
     <servers />
   </component>

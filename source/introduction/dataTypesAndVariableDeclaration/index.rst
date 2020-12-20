@@ -292,8 +292,8 @@ Miscellaneous
 
 Closures in Rust, also called lambda expressions or lambdas, are functions that can capture the enclosing environment.
 
-For example, the following closure takes ``x`` and ``y`` as inputs, does operations on them and allows us to use
-them as a method.
+For example, the following closure takes ``x`` and ``y`` as inputs, does operation on them and allows us to use
+it as a method.
 
 .. code-block:: rust
 
