@@ -297,11 +297,13 @@ it as a method.
 
 .. code-block:: rust
 
-    let add = |x, y| x + y;
+
+    let add = |x, y| -> i32 { x + y };
 
     let result = add(1, 2);
 
     println!("{}", result);
+
 
 
 
