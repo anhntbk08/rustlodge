@@ -20,176 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edc75ef8-a901-4f8c-8a25-8c0d08204387" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/introduction/binaryVsLibrary/images/binaryVsLibrary.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/introduction/binaryVsLibrary/index.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/images/RustDataTypes.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/books/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/codeFlow/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/environmentSetup/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/examples/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/gcc/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/gitFromSource/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/history/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/memorySafety/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/rustAlgorithms/ciphers/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/rustAlgorithms/dataStructures/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/rustAlgorithms/dynamicProgramming/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/rustAlgorithms/general/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/rustAlgorithms/graphs/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/rustAlgorithms/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/rustAlgorithms/searchAlgorithms/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/rustAlgorithms/sortAlgorithms/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/rustAlgorithms/strings/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/rustCargo/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/rustCompiler/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/servoEngine/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/.buildinfo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_downloads/0f11e47e4923fbf372b7c0c920e3dbd0/Hands-OnConcurrencywithRust.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_downloads/1a4f0f8743e712b54b815184781e73e0/ProgrammingRust.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_downloads/641dc36919da5297586895f65261f384/rustEssentials.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_downloads/7ec92a304da48d270c0548af47eba549/learningRust.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_downloads/c648581d8362d8ccea289b90addd3bb1/ProgrammingRust2ndEdition.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_downloads/e71d91da7bca5afaa2c8186810962411/handsOnFunctionalProgramingInRust.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/RustCodeFlow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/RustInstallDoc10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/compilation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/executable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/firstscreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/llvm.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/new1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/new2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/new3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/new4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/new5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/new6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/new7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/new8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/new9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/objectFile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/output.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/rustLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_images/t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/books/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/codeFlow/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/environmentSetup/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/examples/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/gcc/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/gitFromSource/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/history/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/memorySafety/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/rustAlgorithms/ciphers/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/rustAlgorithms/dataStructures/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/rustAlgorithms/dynamicProgramming/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/rustAlgorithms/general/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/rustAlgorithms/graphs/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/rustAlgorithms/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/rustAlgorithms/searchAlgorithms/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/rustAlgorithms/sortAlgorithms/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/rustAlgorithms/strings/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/rustCargo/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/rustCompiler/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/servoEngine/index.rst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/basic.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/clipboard.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/copy-button.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/copybutton.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/copybutton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/copybutton_funcs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/doctools.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/documentation_options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/file.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/jquery-3.5.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/js/index.3da636dd464baa7582d2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/language_data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/minus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/my_theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/plus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/pygments.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/searchtools.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/underscore-1.3.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/underscore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/css/all.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-regular-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-regular-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-regular-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-regular-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-regular-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-100-italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-100-italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-100.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-100.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-300-italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-300-italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-300.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-300.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-400-italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-400-italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-700-italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-700-italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-700.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-700.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-900-italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-900-italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-900.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/files/lato-latin-ext-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/lato_latin-ext/1.44.1/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/open-sans_all/1.44.1/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/open-sans_all/1.44.1/files/open-sans-all-400-italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/open-sans_all/1.44.1/files/open-sans-all-400-italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/open-sans_all/1.44.1/files/open-sans-all-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/open-sans_all/1.44.1/files/open-sans-all-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/vendor/open-sans_all/1.44.1/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/webpack-macros.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/genindex.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/books/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/codeFlow/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/environmentSetup/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/examples/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/gcc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/gitFromSource/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/history/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/memorySafety/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/rustAlgorithms/ciphers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/rustAlgorithms/dataStructures/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/rustAlgorithms/dynamicProgramming/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/rustAlgorithms/general/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/rustAlgorithms/graphs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/rustAlgorithms/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/rustAlgorithms/searchAlgorithms/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/rustAlgorithms/sortAlgorithms/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/rustAlgorithms/strings/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/rustCargo/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/rustCompiler/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/introduction/servoEngine/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/objects.inv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/searchindex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/introduction/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/dataTypesAndVariableDeclaration/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/dataTypesAndVariableDeclaration/index.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/dataTypesAndVariableDeclaration/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/introduction/dataTypesAndVariableDeclaration/index.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/introduction/dataTypesAndVariableDeclaration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/introduction/dataTypesAndVariableDeclaration/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/searchindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,12 +53,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/images" />
       <recent name="$PROJECT_DIR$/source/images" />
     </key>
   </component>
@@ -237,7 +76,7 @@
       <workItem from="1607428395436" duration="651000" />
       <workItem from="1608231056211" duration="710000" />
       <workItem from="1607428395436" duration="1595000" />
-      <workItem from="1608325348204" duration="5603000" />
+      <workItem from="1608325348204" duration="12508000" />
     </task>
     <servers />
   </component>

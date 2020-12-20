@@ -1,36 +1,16 @@
 Data Types And Variable Declaration
 ###################################
 
-Rust’s data types serve several goals:
-++++++++++++++++++++++++++++++++++++++
-
-- Safety
-
-By checking a program’s types, the Rust compiler
-rules out whole classes of common mistakes. By
-replacing null pointers and unchecked unions with
-type-safe alternatives, Rust is even able to eliminate
-errors that are common sources of crashes in other
-languages.
-
-- Efficiency
-
-Programmers have fine-grained control over how
-Rust programs represent values in memory, and can
-choose types they know the processor will handle
-efficiently. Programs needn’t pay for generality or
-flexibility they don’t use.
-
-- Concision
-
-Rust manages all of this without requiring too much
-guidance from the programmer in the form of types
-written out in the code.
 
 
 
 Data Types
 ++++++++++
+
+.. image:: images/RustDataTypes.png
+
+Primitive Data Types
+++++++++++++++++++++
 
 **Int (Integer)**
 ++++++++++++++++++++++++
@@ -111,51 +91,24 @@ Char is written as :
 This will create an immutable variable a and bind it with the value ``%``. ``char`` denotes that the datatype is
 a character. The character must be enclosed by single quotes and must not have more than one character.
 
-**String (String)**
-++++++++++++++++++++++++
+**Unicode values as char**
 
-A string is a bunch of characters that are stored together inside the double quotes("").
-
-String is written as :
+Unicode values can also be passed as char. For e.g. :
 
 .. code-block:: rust
 
-    let a: &str = "This is a string";
 
-This will create a string named ``a`` and assign it the value ``This is a string``.
-All strings have to be inside the double quotes.
+    let  a = '\u{007b}';
 
-**Tuple (Tuple)**
-++++++++++++++++++++++++
+This will create an immutable variable ``a`` and assign it the value that corresponds to the respective unicode
+value for ``007b``. The syntax is as follows : ``'\u{hex_value_of_the_corresponding_unicode_reference}'``.
 
-A tuple is a collection of values of different types.
+According to the example given above, the value assigned to the variable a will be equal to the corresponding value
+which the ``007b`` (in hex) i.e. the reference 123 (in decimal) has which is ``{``. Therefore the value assigned to the
+variable will be the special character '{'.
 
-Tuple is written as :
-
-.. code-block:: rust
-
-    let a:(i32,f64,u8) = (-325,4.9,22);
-
-This will create a tuple named ``a`` with 3 different types of values. The values are then
-assigned respectively.
-
-
-**Array (Array)**
-
-
-An array is a collection of objects of the same type T, stored in contiguous memory. Arrays are created using brackets
-``[]``, and their length, which is known at compile time, is part of their type signature [T; length].
-
-An array is written as :
-
-.. code-block:: rust
-
-    let a: [i32; 5] = [1, 2, 3, 4, 5];
-
-This will create an array named ``a`` of type ``i32`` whose length is 5. The characters defined in the array are
-1, 2, 3, 4 & 5 at the respective positions.
-
-
+User-defined Data Types
++++++++++++++++++++++++
 
 **Slice (Slice)**
 ++++++++++++++++++++++++
@@ -177,6 +130,21 @@ A slice is written as :
 
 This creates a slice named ``a`` whose length is from ``0`` to ``6`` in memory. The values can be added dynamically to
 the slice.
+
+
+**String (String)**
+++++++++++++++++++++++++
+
+A string is a bunch of characters that are stored together inside the double quotes("").
+
+String is written as :
+
+.. code-block:: rust
+
+    let a: &str = "This is a string";
+
+This will create a string named ``a`` and assign it the value ``This is a string``.
+All strings have to be inside the double quotes.
 
 
 **Struct (Structure)**
@@ -205,6 +173,7 @@ Structs is written as :
         y: f32,
     }
 
+
 **Enum (Enumeration)**
 ++++++++++++++++++++++++
 
@@ -213,19 +182,6 @@ which is valid as a struct is also valid as an enum.
 
 An enum is written as :
 
-.. code-block:: rust
-
-    enum WebEvent {
-        PageLoad,
-        PageUnload,
-        KeyPress(char),
-        Paste(String),
-        Click { x: i64, y: i64 },
-    }
-
-This creates an enum ``WebEvent`` which has 5 fields as described.
-
-A C-like enum :
 
 .. code-block:: rust
 
@@ -234,6 +190,24 @@ A C-like enum :
         One,
         Two,
     }
+
+
+
+**Tuple (Tuple)**
+++++++++++++++++++++++++
+
+A tuple is a collection of values of different types.
+
+Tuple is written as :
+
+.. code-block:: rust
+
+    let a:(i32,f64,u8) = (-325,4.9,22);
+
+This will create a tuple named ``a`` with 3 different types of values. The values are then
+assigned respectively.
+
+
 
 **Box (Box)**
 ++++++++++++++++++++++++
@@ -263,6 +237,24 @@ The usage of ``Box`` can be seen as :
     }
 
 
+
+**Array (Array)**
++++++++++++++++++
+
+
+An array is a collection of objects of the same type T, stored in contiguous memory. Arrays are created using brackets
+``[]``, and their length, which is known at compile time, is part of their type signature [T; length].
+
+An array is written as :
+
+.. code-block:: rust
+
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+
+This will create an array named ``a`` of type ``i32`` whose length is 5. The characters defined in the array are
+1, 2, 3, 4 & 5 at the respective positions.
+
+
 **Vec (Vector)**
 ++++++++++++++++++++++++
 
@@ -284,6 +276,20 @@ A vector can be written as :
 
     //Initialise with the macro to make the initialization more convenient
     let v = vec![10,20,30,40,50];
+
+
+**Closures**
+++++++++++++
+
+Closures in Rust, also called lambda expressions or lambdas, are functions that can capture the enclosing environment.
+For example, a closure that captures the x variable:
+
+.. code-block:: rust
+
+    |val| val + x
+
+The syntax and capabilities of closures make them very convenient for on the fly usage. Calling a closure is exactly
+like calling a function. However, both input and return types can be inferred and input variable names must be specified.
 
 **Pointers**
 ++++++++++++
@@ -325,19 +331,6 @@ Raw pointers are pointers without safety or liveness guarantees. Raw pointers ar
 for example *const i32 means a raw pointer to a 32-bit integer. Copying or dropping a raw pointer has no effect
 on the lifecycle of any other value. Dereferencing a raw pointer is an unsafe operation, this can also be used
 to convert a raw pointer to a reference by reborrowing it (&* or &mut *).
-
-
-**Closures**
-
-Closures in Rust, also called lambda expressions or lambdas, are functions that can capture the enclosing environment.
-For example, a closure that captures the x variable:
-
-.. code-block:: rust
-
-    |val| val + x
-
-The syntax and capabilities of closures make them very convenient for on the fly usage. Calling a closure is exactly
-like calling a function. However, both input and return types can be inferred and input variable names must be specified.
 
 
 
