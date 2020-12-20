@@ -19,3 +19,4 @@ Introduction to Rust
     RustAlgorithms <./rustAlgorithms/index.rst>
     Binary vs Library <./binaryVsLibrary/index.rst>
     Rust Comments <./rustComments/index.rst>
+    Exercises <./exercises/index.rst>

@@ -21,6 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="edc75ef8-a901-4f8c-8a25-8c0d08204387" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/dataTypesAndVariableDeclaration/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/dataTypesAndVariableDeclaration/index.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/dataTypesAndVariableDeclaration/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/introduction/dataTypesAndVariableDeclaration/index.rst.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +73,7 @@
       <workItem from="1607428395436" duration="651000" />
       <workItem from="1608231056211" duration="710000" />
       <workItem from="1607428395436" duration="1595000" />
-      <workItem from="1608325348204" duration="17540000" />
+      <workItem from="1608325348204" duration="19534000" />
     </task>
     <servers />
   </component>
@@ -98,6 +101,10 @@
       <screen x="1366" y="0" width="2560" height="1080" />
     </state>
     <state x="2450" y="456" width="382" height="175" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741/1366.0.2560.1080@1366.0.2560.1080" timestamp="1608232635982" />
+    <state x="2355" y="156" width="581" height="768" key="find.popup" timestamp="1608444738014">
+      <screen x="1366" y="0" width="2560" height="1080" />
+    </state>
+    <state x="2355" y="156" width="581" height="768" key="find.popup/0.199.1366.741/1366.0.2560.1080@1366.0.2560.1080" timestamp="1608444738014" />
     <state x="2309" y="239" key="search.everywhere.popup" timestamp="1607835784391">
       <screen x="1366" y="0" width="2560" height="1080" />
     </state>

@@ -363,6 +363,7 @@ A mutable reference (that hasn't been borrowed) is the only way to access the va
 
        * ( mut | const ) TypeNoBounds
 
+
 Raw pointers are pointers without safety or liveness guarantees. Raw pointers are written as *const T or *mut T,
 for example *const i32 means a raw pointer to a 32-bit integer. Copying or dropping a raw pointer has no effect
 on the lifecycle of any other value. Dereferencing a raw pointer is an unsafe operation, this can also be used
