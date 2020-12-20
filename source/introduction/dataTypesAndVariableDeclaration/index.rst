@@ -110,6 +110,23 @@ variable will be the special character '{'.
 User-defined Data Types
 +++++++++++++++++++++++
 
+**Array (Array)**
++++++++++++++++++
+
+
+An array is a collection of objects of the same type T, stored in contiguous memory. Arrays are created using brackets
+``[]``, and their length, which is known at compile time, is part of their type signature [T; length].
+
+An array is written as :
+
+.. code-block:: rust
+
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+
+This will create an array named ``a`` of type ``i32`` whose length is 5. The characters defined in the array are
+1, 2, 3, 4 & 5 at the respective positions.
+
+
 **Slice (Slice)**
 ++++++++++++++++++++++++
 
@@ -185,10 +202,13 @@ An enum is written as :
 
 .. code-block:: rust
 
-    enum Number {
-        Zero,
-        One,
-        Two,
+    pub enum Switch {
+        /// True.
+        On,
+        /// False.
+        Off,
+        /// Auto.
+        Auto,
     }
 
 
@@ -222,37 +242,13 @@ The usage of ``Box`` can be seen as :
 
 .. code-block:: rust
 
-    struct Point {
-        x: f64,
-        y: f64,
-    }
-
-    fn origin() -> Point {
-        Point { x: 0.0, y: 0.0 }
-    }
-
-    fn boxed_origin() -> Box<Point> {
-        // Allocate this point on the heap, and return a pointer to it
-        Box::new(Point { x: 0.0, y: 0.0 })
+    {
+      let a = Box :: new(1);
+      print!("value of a is : {}" ,a);
     }
 
 
 
-**Array (Array)**
-+++++++++++++++++
-
-
-An array is a collection of objects of the same type T, stored in contiguous memory. Arrays are created using brackets
-``[]``, and their length, which is known at compile time, is part of their type signature [T; length].
-
-An array is written as :
-
-.. code-block:: rust
-
-    let a: [i32; 5] = [1, 2, 3, 4, 5];
-
-This will create an array named ``a`` of type ``i32`` whose length is 5. The characters defined in the array are
-1, 2, 3, 4 & 5 at the respective positions.
 
 
 **Vec (Vector)**
@@ -274,22 +270,60 @@ A vector can be written as :
 
     Let v : Vec<i32> = Vec::new();
 
+In the above declaration, v is a vector of i32 type and it is created by using Vec::new() function.
+
+There is another way to create the vector:
+Rust provides vec! macro to create the vector and hold the values that we provide.
+
+For example:
+
+.. code-block:: rust
+
+
     //Initialise with the macro to make the initialization more convenient
     let v = vec![10,20,30,40,50];
 
+
+Miscellaneous
+++++++++++++++
 
 **Closures**
 ++++++++++++
 
 Closures in Rust, also called lambda expressions or lambdas, are functions that can capture the enclosing environment.
-For example, a closure that captures the x variable:
+
+For example, the following closure takes ``x`` and ``y`` as inputs, does operations on them and allows us to use
+them as a method.
 
 .. code-block:: rust
 
-    |val| val + x
+    let add = |x, y| x + y;
+
+    let result = add(1, 2);
+
+    println!("{}", result);
+
+
+
+For example, a closure to find out the factorial of a function is as follows :
+
+.. code-block:: rust
+
+    fn main(){
+
+    let fact = |x| -> i32 { (1..=x).product() };
+
+
+        println!("{}", fact(5));
+
+    }
+
+Here, we create a closure and pass ``x`` as parameter and call the product method which iterates over all the numbers
+from 1 to ``x``.
 
 The syntax and capabilities of closures make them very convenient for on the fly usage. Calling a closure is exactly
-like calling a function. However, both input and return types can be inferred and input variable names must be specified.
+like calling a function. However, both input and return types can be inferred and input variable names must be
+specified.
 
 **Pointers**
 ++++++++++++

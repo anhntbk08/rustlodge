@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edc75ef8-a901-4f8c-8a25-8c0d08204387" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/images/RustDataTypes.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/dataTypesAndVariableDeclaration/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/dataTypesAndVariableDeclaration/index.doctree" afterDir="false" />
@@ -76,7 +75,7 @@
       <workItem from="1607428395436" duration="651000" />
       <workItem from="1608231056211" duration="710000" />
       <workItem from="1607428395436" duration="1595000" />
-      <workItem from="1608325348204" duration="12508000" />
+      <workItem from="1608325348204" duration="16801000" />
     </task>
     <servers />
   </component>
