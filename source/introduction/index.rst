@@ -20,3 +20,4 @@ Introduction to Rust
     Binary vs Library <./binaryVsLibrary/index.rst>
     Rust Comments <./rustComments/index.rst>
     Exercises <./exercises/index.rst>
+    Data Types <./dataTypes/index.rst>

@@ -20,11 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edc75ef8-a901-4f8c-8a25-8c0d08204387" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/introduction/dataTypesAndVariableDeclaration/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/introduction/dataTypesAndVariableDeclaration/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_sources/introduction/dataTypesAndVariableDeclaration/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/introduction/dataTypesAndVariableDeclaration/index.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime.txt" beforeDir="false" afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction/dataTypes/images/dataTypes.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/dataTypes/images/dataTypes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction/dataTypes/images/fixedSize.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/dataTypes/images/fixedSize.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction/dataTypes/images/floatsInt.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/dataTypes/images/floatsInt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction/dataTypes/images/pointerSized.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/dataTypes/images/pointerSized.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction/dataTypes/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/dataTypes/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +40,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1l5JwBtNZMBSkE0ziFdxEp1qYK1" />
@@ -50,14 +60,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/introduction/dataTypes/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/introduction/dataTypes/images" />
+      <recent name="$PROJECT_DIR$/source/introduction/dataTypes" />
       <recent name="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/images" />
       <recent name="$PROJECT_DIR$/source/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/introduction/dataTypes/images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,6 +89,7 @@
       <workItem from="1608231056211" duration="710000" />
       <workItem from="1607428395436" duration="1595000" />
       <workItem from="1608325348204" duration="19534000" />
+      <workItem from="1608525414367" duration="12668000" />
     </task>
     <servers />
   </component>
@@ -91,23 +107,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1687" y="53" width="1565" height="807" key="MergeDialog" timestamp="1608232713588">
-      <screen x="1366" y="0" width="2560" height="1080" />
-    </state>
-    <state x="1687" y="53" width="1565" height="807" key="MergeDialog/0.27.1366.741/1366.0.2560.1080@1366.0.2560.1080" timestamp="1608232713588" />
-    <state x="2450" y="456" width="382" height="175" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608232635982">
-      <screen x="1366" y="0" width="2560" height="1080" />
-    </state>
-    <state x="2450" y="456" width="382" height="175" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741/1366.0.2560.1080@1366.0.2560.1080" timestamp="1608232635982" />
-    <state x="2355" y="156" width="581" height="768" key="find.popup" timestamp="1608444738014">
-      <screen x="1366" y="0" width="2560" height="1080" />
-    </state>
-    <state x="2355" y="156" width="581" height="768" key="find.popup/0.199.1366.741/1366.0.2560.1080@1366.0.2560.1080" timestamp="1608444738014" />
-    <state x="2309" y="239" key="search.everywhere.popup" timestamp="1607835784391">
-      <screen x="1366" y="0" width="2560" height="1080" />
-    </state>
-    <state x="2309" y="239" key="search.everywhere.popup/0.156.1366.741/1366.0.2560.1080@1366.0.2560.1080" timestamp="1607835784391" />
   </component>
 </project>
