@@ -1,0 +1,6 @@
+recommonmark
+requests
+Sphinx
+make
+sphinx_rtd_theme
+pydata_sphinx_theme
