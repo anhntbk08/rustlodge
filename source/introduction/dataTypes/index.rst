@@ -9,6 +9,11 @@ Every value in Rust is of a certain data type, which tells Rust what kind of dat
 
 .. image:: images/rustDatatype.png
 
+Variable Declaration
+====================
+
+.. image:: images/variableDeclare.png
+
 Scalar Types
 =============
 
