@@ -32,7 +32,7 @@ Run the following command :
 
 .. code-block:: bash
 
-   sudo cp ~/.cargo/bin/rustc /usr/local/bin/
+   source $HOME/.cargo/env
 
 Run the following command to check if Rust is installed successfully :
 
