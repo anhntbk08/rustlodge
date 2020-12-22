@@ -6,9 +6,7 @@ Basic
 
 * :download:`The Rust Programming Language by Steve Klabnik Carol Nichols <pdf/The Rust Programming Language by Steve Klabnik Carol Nichols (z-lib.org).pdf>`
 
-* :download:`Programming Rust <pdf/ProgrammingRust.pdf>`
-
-* :download:`Programming Rust 2nd Edition <pdf/ProgrammingRust2ndEdition.pdf>`
+* :download:`Programming Rust <pdf/ProgrammingRust.pdf>`   |   :download:`Programming Rust 2nd Edition <pdf/ProgrammingRust2ndEdition.pdf>`
 
 * :download:`Learning Rust <pdf/learningRust.pdf>`
 
