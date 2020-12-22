@@ -14,6 +14,8 @@ Basic
 
 * :download:`Beginning Rust From Novice to Professional by Carlo Milanesi (z-lib.org) <pdf/BeginningRustFromNovicetoProfessionalbyCarloMilanesi.pdf>`
 
+* :download:`The Ultimate Beginner's Guide to Learn Rust programming Step by Step <pdf/Bach, John - Rust_ The Ultimate Beginner's Guide to Learn Rust programming Step by Step (2020).epub>`
+
 * :download:`Rust Cookbook by Vigneshwer Dhinakaran <pdf/RustCookbookbyVigneshwerDhinakaran.pdf>`
 
 * :download:`The Complete Rust Programming Reference Guide by Rahul Sharma Vesa Kaihlavirta Claus Matzinger <pdf/TheCompleteRustProgrammingReferenceGuidebyRahlSharmaVesaKaihlavirtaClausMatzinger.pdf>`
@@ -54,3 +56,15 @@ Practical
 
 * :download:`Practical RustProjects Building Game Physical Computing,and Machine Learning Applications <pdf/PracticalRustProjectsBuildingGamePhysicalComputing,andMachineLearningApplicationsShingLYu.pdf>`
 
+* :download:`Creative Projects for Rust Programmers Build exciting projects on domains such as web apps, WebAssembly, games, and parsing by Carlo Milanesi<pdf/Creative Projects for Rust Programmers Build exciting projects on domains such as web apps, WebAssembly, games, and parsing by Carlo Milanesi (z-lib.org).pdf>`
+
+* :download:`Jim Blandy, Jason Orendorff - Programming Rust_ Fast, Safe Systems Development-O’Reilly Media <pdf/Jim Blandy, Jason Orendorff - Programming Rust_ Fast, Safe Systems Development-O’Reilly Media (2017).pdf>`
+
+* :download:`Joseph Faisal Nusairat - Rust for the IoT_ Building Internet of Things Apps with Rust and Raspberry Pi-Apress <pdf/Joseph Faisal Nusairat - Rust for the IoT_ Building Internet of Things Apps with Rust and Raspberry Pi-Apress (2020).pdf>` | :download:`Joydeep Bhattacharjee - Practical Machine Learning With Rust_ Creating Intelligent Applications In Rust-Apress <pdf/Joydeep Bhattacharjee - Practical Machine Learning With Rust_ Creating Intelligent Applications In Rust-Apress (2020).pdf>`
+
+
+
+Miscellaneous
+-------------
+
+* :download:`The Pragmatic Programmer <pdf/The Pragmatic Programmer Your Journey to Mastery, 20th Anniversary Edition by Andrew Hunt David Hurst Thomas (z-lib.org).pdf>`

@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="edc75ef8-a901-4f8c-8a25-8c0d08204387" name="Default Changelist" comment="" />
+    <list default="true" id="edc75ef8-a901-4f8c-8a25-8c0d08204387" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/Bach, John - Rust_ The Ultimate Beginner's Guide to Learn Rust programming Step by Step (2020).epub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/Creative Projects for Rust Programmers Build exciting projects on domains such as web apps, WebAssembly, games, and parsing by Carlo Milanesi (z-lib.org).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/Guillaume Gomez_ Antoni Boucher - Rust Programming By Example_ Enter the world of Rust by building engaging, concurrent, reactive, and robust applications-Packt Publishing (2018).epub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/Jim Blandy, Jason Orendorff - Programming Rust_ Fast, Safe Systems Development-O’Reilly Media (2017).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/Joseph Faisal Nusairat - Rust for the IoT_ Building Internet of Things Apps with Rust and Raspberry Pi-Apress (2020).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/Joydeep Bhattacharjee - Practical Machine Learning With Rust_ Creating Intelligent Applications In Rust-Apress (2020).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/The Pragmatic Programmer Your Journey to Mastery, 20th Anniversary Edition by Andrew Hunt David Hurst Thomas (z-lib.org).pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction/books/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/books/index.rst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,12 +36,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/introduction/books/pdf" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/introduction/books/pdf" />
       <recent name="$PROJECT_DIR$/source/images" />
     </key>
   </component>
@@ -47,7 +58,7 @@
       <workItem from="1607119132130" duration="184000" />
       <workItem from="1607428395436" duration="1595000" />
       <workItem from="1608058921923" duration="1124000" />
-      <workItem from="1608607224285" duration="5347000" />
+      <workItem from="1608607224285" duration="7288000" />
     </task>
     <servers />
   </component>
