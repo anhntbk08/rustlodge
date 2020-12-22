@@ -48,7 +48,7 @@ Open IDE and go to ``Plugins``.
 
 .. image:: ./images/image.png
 
-Search for ``Toml``, ``Rust`` and ``Rainbow Brackets`` and install them.
+Search for ``Toml``, ``Rust``, ``Add to gitignore`` and ``Rainbow Brackets`` and install them.
 
 
 
@@ -56,12 +56,14 @@ Search for ``Toml``, ``Rust`` and ``Rainbow Brackets`` and install them.
 
 
 
-
+.. image:: ./images/gitignore.png
 
 
 .. image:: ./images/new2.png
 
 Install and click ``OK``.
+
+
 
 
 
