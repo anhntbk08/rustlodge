@@ -32,7 +32,7 @@ Run the following command :
 
 .. code-block:: bash
 
-   sudo cp ~/.cargo/bin/rustc /usr/local/bin/
+   source $HOME/.cargo/env
 
 Run the following command to check if Rust is installed successfully :
 
@@ -48,7 +48,7 @@ Open IDE and go to ``Plugins``.
 
 .. image:: ./images/image.png
 
-Search for ``Toml``, ``Rust`` and ``Rainbow Brackets`` and install them.
+Search for ``Toml``, ``Rust``, ``Add to gitignore`` and ``Rainbow Brackets`` and install them.
 
 
 
@@ -56,12 +56,14 @@ Search for ``Toml``, ``Rust`` and ``Rainbow Brackets`` and install them.
 
 
 
-
+.. image:: ./images/gitignore.png
 
 
 .. image:: ./images/new2.png
 
 Install and click ``OK``.
+
+
 
 
 

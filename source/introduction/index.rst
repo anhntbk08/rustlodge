@@ -15,9 +15,8 @@ Introduction to Rust
     GCC <./gcc/index.rst>
     Environment Setup <./environmentSetup/index.rst>
     Rust using cargo <./rustCargo/index.rst>
-    Rust Questions <examples/index.rst>
+    Rust Exercises <exercises/index.rst>
     RustAlgorithms <./rustAlgorithms/index.rst>
     Binary vs Library <./binaryVsLibrary/index.rst>
     Rust Comments <./rustComments/index.rst>
-    Exercises <./exercises/index.rst>
     Data Types <./dataTypes/index.rst>

@@ -1,29 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="edc75ef8-a901-4f8c-8a25-8c0d08204387" name="Default Changelist" comment="added gitignores">
-      <change afterPath="$PROJECT_DIR$/source/introduction/dataTypes/images/floatingType.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/introduction/dataTypes/images/rustDatatype.png" afterDir="false" />
+    <list default="true" id="edc75ef8-a901-4f8c-8a25-8c0d08204387" name="Default Changelist" comment="Updated data types acc to updates">
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/Bach, John - Rust_ The Ultimate Beginner's Guide to Learn Rust programming Step by Step (2020).epub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/Creative Projects for Rust Programmers Build exciting projects on domains such as web apps, WebAssembly, games, and parsing by Carlo Milanesi (z-lib.org).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/Guillaume Gomez_ Antoni Boucher - Rust Programming By Example_ Enter the world of Rust by building engaging, concurrent, reactive, and robust applications-Packt Publishing (2018).epub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/Jim Blandy, Jason Orendorff - Programming Rust_ Fast, Safe Systems Development-O’Reilly Media (2017).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/Joseph Faisal Nusairat - Rust for the IoT_ Building Internet of Things Apps with Rust and Raspberry Pi-Apress (2020).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/Joydeep Bhattacharjee - Practical Machine Learning With Rust_ Creating Intelligent Applications In Rust-Apress (2020).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/books/pdf/The Pragmatic Programmer Your Journey to Mastery, 20th Anniversary Edition by Andrew Hunt David Hurst Thomas (z-lib.org).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/introduction/environmentSetup/images/gitignore.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/introduction/dataTypes/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/dataTypes/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime.txt" beforeDir="false" afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction/books/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/books/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction/environmentSetup/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/environmentSetup/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction/examples/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction/exercises/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/exercises/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/introduction/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/introduction/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +28,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectId" id="1l5JwBtNZMBSkE0ziFdxEp1qYK1" />
   <component name="ProjectLevelVcsManager">
@@ -55,19 +43,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/introduction/dataTypes/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/introduction/books/pdf" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source/introduction/dataTypes/images" />
-      <recent name="$PROJECT_DIR$/source/introduction/dataTypes" />
-      <recent name="$PROJECT_DIR$/source/introduction/dataTypesAndVariableDeclaration/images" />
+      <recent name="$PROJECT_DIR$/source/introduction/books/pdf" />
       <recent name="$PROJECT_DIR$/source/images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source/introduction/dataTypes/images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -80,22 +63,10 @@
       <updated>1606881258030</updated>
       <workItem from="1606881260212" duration="2883000" />
       <workItem from="1607119132130" duration="184000" />
-      <workItem from="1607428395436" duration="651000" />
-      <workItem from="1608231056211" duration="710000" />
       <workItem from="1607428395436" duration="1595000" />
-      <workItem from="1608325348204" duration="19534000" />
-      <workItem from="1608525414367" duration="14012000" />
-      <workItem from="1608616855996" duration="5113000" />
-      <workItem from="1608645652638" duration="13228000" />
+      <workItem from="1608058921923" duration="1124000" />
+      <workItem from="1608607224285" duration="7288000" />
     </task>
-    <task id="LOCAL-00001" summary="added gitignores">
-      <created>1608542433292</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1608542433293</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,9 +83,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="added gitignores" />
-    <option name="LAST_COMMIT_MESSAGE" value="added gitignores" />
   </component>
 </project>
