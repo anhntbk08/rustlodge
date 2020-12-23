@@ -1,12 +1,131 @@
-Creating new Project using Cargo 
-=================================
+Cargo and Basic Project Structure
++++++++++++++++++++++++++++++++++++++++++
 
-To start a new package with Cargo, use cargo new:
+Cargo
+========
 
-.. code-block:: bash
+* Cargo is Rust’s built-in package manager and the build system.
+* Cargo can be used not only to automate the setting up of a project, but also to compile and execute Rust code.
+* Cargo can be used to create the parts required for a library instead of an executable, and can also generate application documentation.
 
-    cargo new hello_world --bin
 
-Open the project with your IDE & you are ready to code
+Creating a binary package using Cargo
+--------------------------------------
 
-.. image:: images/firstscreen.png
+* To start a new binary with Cargo, use ``cargo new``:
+
+    .. code-block:: bash
+
+        cargo new hello_world --bin
+
+* Open the project with your IDE & you are ready to code
+
+    .. image:: images/firstscreen.png
+
+Creating a library using Cargo
+-------------------------------
+
+* To start a new binary with Cargo, use ``cargo new``:
+
+    .. code-block:: bash
+
+        cargo new app/feature1
+
+* Open the project with your IDE & you are ready to code
+
+Miscellaneous Cargo Commands
+-----------------------------
+
+Cargo is an amazing utility, it also has other commands, which are listed in the table that follows. All commands follow this form:
+
+    .. code-block::
+
+        cargo <command> <opts>
+
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | Command               | What it does                                                                                                                                                                                                                                                                                               |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **init**              | Create a new Cargo package in an existing directory                                                                                                                                                                                                                                                        |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **new**               | This command will create a new Cargo package in the given directory. This includes a simple template with a ``Cargo.toml`` manifest, sample source file, and a VCS ignore file.                                                                                                                            |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **build**             | This will build the source code                                                                                                                                                                                                                                                                            |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **run**               | After build of source code using ``build``, we can use Cargo to execute the binary                                                                                                                                                                                                                         |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **clean**             | This removes the object files, and the compiler then has to recompile all the source files.                                                                                                                                                                                                                |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **doc**               | Rust is able to create documentation based on meta tags with the source files.                                                                                                                                                                                                                             |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **test**              | Compile and execute unit and integration tests.                                                                                                                                                                                                                                                            |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **fetch**             | This command fetches the dependencies of a package from the network. If a lockfile is available, this command will ensure that all of the Git dependencies and/or registry dependencies are downloaded and locally available. The network is never called after a cargo fetch unless the lockfile changes. |
+    |                       | If the lockfile is not available, then this is the equivalent of cargo generate-lockfile. A lockfile is generated and all the dependencies are also updated.                                                                                                                                               |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **generate-lockfile** | This command generates the lockfile for a project. The lockfile is typically generated when cargo build is issued (you will see it as Cargo.lockfile in the directory structure).                                                                                                                          |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **git-checkout**      | This command checks out a Git repository. You will need to use it in the following form:                                                                                                                                                                                                                   |
+    |                       | ``cargo git-checkout -url=URL``                                                                                                                                                                                                                                                                            |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **locate-project**    | This command locates a package.                                                                                                                                                                                                                                                                            |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **login**             | This command saves an API token from the registry locally. The call is in the following form:                                                                                                                                                                                                              |
+    |                       | ``cargo login -host=HOST   token``                                                                                                                                                                                                                                                                         |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **owner**             | This command manages the owners of a crate on the registry. This allows the ownership of a crate (a crate is a Rust library) to be altered (--add LOGIN or -remove LOGIN) as well as adding tokens to the crate.                                                                                           |
+    |                       |                                                                                                                                                                                                                                                                                                            |
+    |                       | This command will modify the owners for a package on the specified registry (or the default). Note that the owners of a package can upload new versions, yank old versions, and also modify the set of owners, so be cautious!                                                                             |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **package**           | This command assembles the local package into a distributable tarball.                                                                                                                                                                                                                                     |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **pkgid**             | This command prints a fully qualified package specification.                                                                                                                                                                                                                                               |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **publish**           | This command uploads a package to the registry.                                                                                                                                                                                                                                                            |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **read-manifest**     | This command reads the manifest file (.toml).                                                                                                                                                                                                                                                              |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **rustc**             | This command compiles the complete package and requires that only one target is being compiled. If more than one target is available for the current package, the filters --lib, --bin, and so on—must be used to select which target is compiled.                                                         |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **search**            | This command searches for packages at https://crates.io/.                                                                                                                                                                                                                                                  |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **update**            | This command updates dependencies as recorded in the local lockfile.                                                                                                                                                                                                                                       |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **verify-project**    | This command ensures that the project is correctly created.                                                                                                                                                                                                                                                |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **version**           | This command shows the version of Cargo.                                                                                                                                                                                                                                                                   |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | **yank**              | This command removes a pushed crate from the index.                                                                                                                                                                                                                                                        |
+    +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+Structure of a Rust project
+===========================
+
+A Rust project (irrespective of the platform you are developing on) will have the following structure:
+
+    .. image:: images/projectStructure.png
+
+This is how `Cargo documentation <https://doc.rust-lang.org/cargo/guide/project-layout.html>`_ describes about the recommended project layout,
+
+    .. image:: images/rustProjSttructer.png
+
+
+
+Standard RUST gitignores
+==========================
+
+According to Cargo documentation, the gitignores are mentioned below
+
+    .. code-block:: gitignore
+
+        # Generated by Cargo
+        # will have compiled files and executables
+        debug/
+        target/
+
+        # Remove Cargo.lock from gitignore if creating an executable, leave it for libraries
+        # More information here https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html
+        Cargo.lock
+
+        # These are backup files generated by rustfmt
+        **/*.rs.bk
