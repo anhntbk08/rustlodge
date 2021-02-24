@@ -11,6 +11,7 @@ RustLodge
    :maxdepth: 1
 
    Introduction to Rust <./introduction/index.rst>
+   Git Project <./gitProject/index.rst>
 
 
 
