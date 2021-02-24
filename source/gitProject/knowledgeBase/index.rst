@@ -42,6 +42,20 @@ Papers
 
 * http://www-sop.inria.fr/orion/COGC/teams/ECOOjournal.pdf
 
+:download: `Paper 1<papers/A Dataset of the Activity of the git.pdf>`
+:download: `Paper 2<papers/Analysis of Software Developer Activity on a Distributed Version Control System.pdf>`
+:download: `Paper 3<papers/Defect Collection and Reporting System for Git based Open Source Software.pdf>`
+:download: `Paper 4<papers/Extracción de Nubes de Palabras en Repositorios Git.pdf>`
+:download: `Paper 5<papers/How Distributed Version Control Systems impact open source software projects.pdf>`
+:download: `Paper 6<papers/Improving Parallelism in Git and GCC: Strategies, Difficulties, and Lessons Learned.pdf>`
+:download: `Paper 7<papers/VisGi: Visualizing Git Branches.pdf>`
+:download: `Paper 8<papers/Source Code Management Using.pdf>`
+:download: `Paper 9<papers/Switching to Git: The Good, the Bad, and the Ugly.pdf>`
+:download: `Paper 10<papers/The Role of the Version Control Information in Code Comprehension.pdf>`
+:download: `Paper 11<papers/Tracking the Ripple Impact of Code Changes through Version Control Systems.pdf>`
+:download: `Paper 12<papers/Using version control systems in software.pdf>`
+
+
 
 
 
