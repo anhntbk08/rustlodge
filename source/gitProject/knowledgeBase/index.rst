@@ -48,8 +48,6 @@ Papers
 
     :download:`Defect Collection and Reporting System for Git based Open Source Software<papers/Defect Collection and Reporting System for Git based Open Source Software.pdf>`
 
-    :download:`Extracción de Nubes de Palabras en Repositorios Git<papers/Extracción de Nubes de Palabras en Repositorios Git.pdf>`
-
     :download:`How Distributed Version Control Systems impact open source software projects<papers/How Distributed Version Control Systems impact open source software projects.pdf>`
 
     :download:`Improving Parallelism in Git and GCC: Strategies, Difficulties, and Lessons Learned<papers/Improving Parallelism in Git and GCC: Strategies, Difficulties, and Lessons Learned.pdf>`
