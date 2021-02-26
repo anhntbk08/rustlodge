@@ -64,6 +64,11 @@ Papers
 
     :download:`Using version control systems in software<papers/Using version control systems in software.pdf>`
 
+    :download:`ENFORCING ACCESS CONTROL IN DISTRIBUTED VERSION CONTROL SYSTEMS<papers/ENFORCING ACCESS CONTROL IN DISTRIBUTED VERSION CONTROL SYSTEMS.pdf>`
+
+    :download:`On Analyzing the Topology of Commit Histories in Decentralized Version Control Systems<papers/On Analyzing the Topology of Commit Histories in Decentralized Version Control Systems.pdf>`
+
+
 
 
 
