@@ -7,6 +7,7 @@ Git Project
 
 
     Knowledge Base <./knowledgeBase/index.rst>
+    Plumbing Commands <./plumbingCommands/index.rst>
 
 
 
