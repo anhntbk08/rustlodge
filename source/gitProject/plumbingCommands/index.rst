@@ -250,7 +250,7 @@ If you have another look inside .git/refs, you’ll see a new file has been crea
 The reference master is a pointer to a commit. Anywhere we might use the commit ID, we can use master as a more convenient shortcut. This is what it looks like:
 
 
-2
+.. image:: images/git_ref_example2.png
 
 
 Let’s use the ref in an example:
