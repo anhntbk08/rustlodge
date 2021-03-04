@@ -87,6 +87,9 @@ have been modified, but not yet saved to the permanent history. In a porcelain G
 to the index with git add, then take a snapshot of the index with git commit. With plumbing, there are
 several extra steps.
 
+.. image:: images/blob_tree.png
+
+
 We can save a file to the index with the update-index command:
 
 .. code-block:: bash
@@ -159,8 +162,8 @@ Let’s inspect it with cat-file:
           A tree can point to a blob to describe the file contents.
 
 
+.. image:: images/blob_tree_commit.png
 
-.. image:: images/blob_tree.png
 
 
 
