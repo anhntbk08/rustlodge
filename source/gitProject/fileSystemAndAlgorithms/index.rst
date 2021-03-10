@@ -158,7 +158,7 @@ posterior subsequences is executed repetitively for the entire remaining sequenc
 **Histogram**
 
 The Histogram algorithm is the enhanced version of Patience, which was built by Bram
-Cohen who is renowned as the BitTorrent developer. 6 It supports low-occurrence common
+Cohen who is renowned as the BitTorrent developer. It supports low-occurrence common
 elements which are applied to improve efficiency. The Histogram was initially built in jgit
 and was introduced in git 1.7.7.
 
