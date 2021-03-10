@@ -123,15 +123,44 @@ represented by hashes.
 Algorithms
 ~~~~~~~~~~~
 
+**Source Code Differencing**
 
 
 
+Existing differencing techniques use similarities in names and structure to match code
+elements at a particular granularity, such as text-based and abstract-syntax-tree-based
+(AST).
+Tree-based differencing techniques are widely used nowadays (e.g., diff in Unix), since
+they are expected to have better understandability than the text-based.
+
+
+Diff Algorithms in Git
+~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Diff is an automatic comparison program used to find the disagreements between the older
+and the newer version of the same file in a storage (including insertions, deletions, document
+renaming, document movements etc.). The diff utility extracts code changes line by line
+in one file compared to the other file and reports them in a list. The operation of the diff
+program has been fundamentally solved by using the longest common subsequence (LCS) problem.
+
+
+**Myers**
+
+Myers algorithm was developed by Myers (1986). In the git diff command, this algo-
+rithm is used as the default. The operation of this algorithm traces the two primary
+identical sequences recursively with the least edited script. Since the Myers only notices
+the sequences which are actually equal in both, the comparison between the other prior and
+posterior subsequences is executed repetitively for the entire remaining sequences.
 
 
 
+**Histogram**
 
-
-
+The Histogram algorithm is the enhanced version of Patience, which was built by Bram
+Cohen who is renowned as the BitTorrent developer. 6 It supports low-occurrence common
+elements which are applied to improve efficiency. The Histogram was initially built in jgit
+and was introduced in git 1.7.7.
 
 
 
