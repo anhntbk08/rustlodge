@@ -8,6 +8,8 @@ Git Project
 
     Knowledge Base <./knowledgeBase/index.rst>
     Plumbing System <./plumbingCommands/index.rst>
+    Git Filesystem and algorithms <./fileSystemAndAlgorithms/index.rst>
+
 
 
 
