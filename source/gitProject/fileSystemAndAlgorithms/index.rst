@@ -123,7 +123,7 @@ represented by hashes.
 Algorithms
 ~~~~~~~~~~~
 
-    :download:`How different are different diff algorithms in Git?<papers/How different are different diff algorithms in Git?.pdf>`
+    :download:`How different are different diff algorithms in Git?<papers/HowDifferentAreDifferentDiffAlgorithmsInGit?.pdf>`
 
 
 
