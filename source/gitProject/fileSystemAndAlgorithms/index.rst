@@ -101,8 +101,22 @@ Snapshot from GitHub Server shows an LFS file is available only in the RAW form;
 
 
 
-Algorithms
-~~~~~~~~~~~~
+Data Structures & Algorithms
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There are several different data structures used in git.
+
+Object storage (under .git/obects/) is a shallow trie — the root is a directory containing 256 subdirectories,
+one for each possible value of the high-order byte of the 20 byte blob ID.
+
+Pack files use a hash table to keep track of the blobs in the pack; this structure is also used in memory — blobs
+and pack files are memory-mapped using the mmap(2) system call.
+
+Finally, commits, tags, and directory blobs comprise a directed acyclic graph (DAG), linked together by their object
+IDs. The directory structure is represented as a tree, but commits and tags form a more complicated structure because
+of branching and merging. The acyclic nature of the DAG is a natural consequence of the fact that links are
+represented by hashes.
+
 
 
 
