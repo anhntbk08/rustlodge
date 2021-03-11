@@ -147,8 +147,8 @@ program has been fundamentally solved by using the longest common subsequence (L
 
 **Myers**
 
-Myers algorithm was developed by Myers (1986). In the git diff command, this algo-
-rithm is used as the default. The operation of this algorithm traces the two primary
+Myers algorithm was developed by Myers (1986). In the git diff command, this algorithm
+is used as the default. The operation of this algorithm traces the two primary
 identical sequences recursively with the least edited script. Since the Myers only notices
 the sequences which are actually equal in both, the comparison between the other prior and
 posterior subsequences is executed repetitively for the entire remaining sequences.
