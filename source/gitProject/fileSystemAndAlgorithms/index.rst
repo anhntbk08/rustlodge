@@ -196,7 +196,7 @@ Tree can be compared to a directory and blob to a file.
 
 Now, if we change the contents of the first file, the corresponding hash would change, and this change would go all the way to the root of the tree.
 
-FILE 1 CHANGED
+**FILE CHANGED**
 
 .. image:: images/fs7.png
 
