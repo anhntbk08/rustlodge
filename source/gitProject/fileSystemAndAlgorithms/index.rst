@@ -171,7 +171,9 @@ and was introduced in git 1.7.7.
 A hash tree or Merkle tree is a tree in which every leaf node is labeled with the cryptographic hash of a data block,
 and every non-leaf node is labeled with the cryptographic hash of the labels of its child nodes. Because of this
 characteristic, Merkle Trees are used to verify that two or more parties have the same data without exchanging
-the entire data collection.
+the entire data collection. Git computes a SHA-1 over the contents of that directory tree, and stores this together
+with metadata. The metadata includes information such as a pointer to a parent commit as well as author information
+and a commit message as a commit object.
 
 
 Here are some of the major benefits of Merkle trees:
