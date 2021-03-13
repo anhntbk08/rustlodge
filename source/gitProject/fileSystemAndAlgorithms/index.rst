@@ -183,7 +183,7 @@ Here are some of the major benefits of Merkle trees:
 
 
 
-Tree can be compared to a directory and blob to a file.
+``Tree`` can be compared to a ``directory`` and ``blob`` to a ``file``.
 
 
 .. image:: images/fs5.png
