@@ -167,7 +167,7 @@ and was introduced in git 1.7.7.
 **Merkle Trees**
 ~~~~~~~~~~~~~~~~~
 
-.. image:: images/f8.png
+.. image:: images/fs8.png
 
 A hash tree or Merkle tree is a tree in which every leaf node is labeled with the cryptographic hash of a data block,
 and every non-leaf node is labeled with the cryptographic hash of the labels of its child nodes. Because of this
