@@ -192,7 +192,14 @@ Here are some of the major benefits of Merkle trees:
 
 
 
+Now, if we change the contents of the first file, the corresponding hash would change, and this change would go all the way to the root of the tree.
 
+FILE 1 CHANGED
+
+.. image:: images/fs7.png
+
+
+This helps Git to maintain two versions for a repository efficiently and this is how it stores the entire history spanning thousands of commits locally for millions of lines of code.
 
 
 
