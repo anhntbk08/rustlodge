@@ -42,10 +42,10 @@ downloaded automatically when needed, for example when a Git branch containing
 .. image:: images/fs1.jpg
 
 
-.. image:: images/fs1.jpg
+.. image:: images/fs2.jpg
 
 
-.. image:: images/fs1.jpg
+.. image:: images/fs3.jpg
 
 
 
@@ -164,15 +164,31 @@ and was introduced in git 1.7.7.
 
 
 
+**Merkle Trees**
+~~~~~~~~~~~~~~~~~
+
+
+A hash tree or Merkle tree is a tree in which every leaf node is labeled with the cryptographic hash of a data block,
+and every non-leaf node is labeled with the cryptographic hash of the labels of its child nodes. Because of this
+characteristic, Merkle Trees are used to verify that two or more parties have the same data without exchanging
+the entire data collection.
+
+
+Here are some of the major benefits of Merkle trees:
+
+
+- They provide a way of proving the integrity and validity of data. Even a small tamper of data will result in a completely different hash.
+
+- Their proofs only require tiny amounts of information to be transmitted across networks. They separate the validation of data from the data itself.
 
 
 
 
+.. image:: images/fs5.png
 
 
 
-
-
+.. image:: images/fs6.png
 
 
 
