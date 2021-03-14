@@ -169,8 +169,9 @@ and was introduced in git 1.7.7.
 
 .. image:: images/fs8.png
 
-A hash tree or Merkle tree is a tree in which every leaf node is labeled with the cryptographic hash of a data block,
-and every non-leaf node is labeled with the cryptographic hash of the labels of its child nodes. Because of this
+A Merkle tree is a hash-based data structure that is a generalization of the hash list. It is a tree structure
+in which each leaf node is a cryptographic hash of a block of data, and each non-leaf node is a hash of its children.
+Typically, Merkle trees have a branching factor of 2, meaning that each node has up to 2 children. Because of this
 characteristic, Merkle Trees are used to verify that two or more parties have the same data without exchanging
 the entire data collection. Git computes a SHA-1 over the contents of that directory tree, and stores this together
 with metadata. The metadata includes information such as a pointer to a parent commit as well as author information
