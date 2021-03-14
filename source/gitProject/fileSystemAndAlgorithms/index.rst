@@ -208,9 +208,10 @@ Now, if we change the contents of the first file, the corresponding hash would c
 This helps Git to maintain two versions for a repository efficiently and this is how it stores the entire history spanning thousands of commits locally for millions of lines of code.
 
 
+**Time Complexity**
 
 
-
+.. image:: images/fs9.png
 
 
 
