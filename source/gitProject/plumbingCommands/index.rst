@@ -27,53 +27,48 @@ Demonstrating Simple Git Plumbing Commands
 **Git Objects**
 ~~~~~~~~~~~~~~~~
 
+- Make a repo:
 
+    .. code-block:: bash
 
-Make a repo:
+        mkdir plumbing-repo
+        cd plumbing-repo
 
+- Initialize an empty git repo:
 
-.. code-block:: bash
+    .. code-block:: bash
 
-    mkdir plumbing-repo
-    cd plumbing-repo
+        git init
 
-Initialize an empty git repo:
+- See the contents:
 
-.. code-block:: bash
+    .. code-block:: bash
 
+        ls .git
 
-    git init
+- Create a file
 
-See the contents:
+    .. code-block:: bash
 
-.. code-block:: bash
+        echo "This is a sample file for testing git plumbing" > sample.txt
 
-    ls .git
+- Hash the file
 
+    .. code-block:: bash
 
-Create a file
+        git hash-object -w sample.txt
 
-.. code-block:: bash
+- Find the hashed file:
 
-    echo "This is a sample file for testing git plumbing" > sample.txt
+    .. code-block:: bash
 
-Hash the file
+        find .git/objects -type f
 
-.. code-block:: bash
+- Cat the file with its hash:
 
-    git hash-object -w sample.txt
+    .. code-block:: bash
 
-Find the hashed file:
-
-.. code-block:: bash
-
-    find .git/objects -type f
-
-Cat the file with its hash:
-
-.. code-block:: bash
-
-    git cat-file -p 18a4906282bd994b870b651a00b9d421e4df4a99
+        git cat-file -p 18a4906282bd994b870b651a00b9d421e4df4a99
 
 
 **Blobs and Trees**
